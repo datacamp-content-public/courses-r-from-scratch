@@ -1,6 +1,6 @@
 ---
-title: 'Chapter Title Here'
-description: 'Chapter description goes here.'
+title: 'The R way'
+description: 'R is a language that allows you to define your data analysis in words.   It is a completely different to something like Excel, where you do much of your analysis by clicking on the graphical user interface. '
 ---
 
 ## Example coding exercise
@@ -16,7 +16,7 @@ skills: 1
 This is an example exercise.
 
 `@instructions`
-
+Show 2 + 2
 
 `@hint`
 
@@ -33,7 +33,7 @@ This is an example exercise.
 
 `@solution`
 ```{r}
-
+2 + 2
 ```
 
 `@sct`
