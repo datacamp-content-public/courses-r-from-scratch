@@ -40,3 +40,6 @@ rsconnect/
 
 # OS-specific files and directories
 .DS_Store
+
+# Jupyter notebook autosave
+.ipynb_checkpoints/
