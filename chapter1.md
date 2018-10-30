@@ -48,7 +48,12 @@ plot(data$heath_exp_per_cap, data$mat_mort_ratio)
 
 `@solution`
 ```{r}
-
+# Read the data into memory
+data = read.csv('http://bit.ly/gender-stats-data')
+# Show the first 6 rows
+head(data)
+# Plot GDP against maternal mortality rate
+plot(data$heath_exp_per_cap, data$mat_mort_ratio)
 ```
 
 `@sct`
