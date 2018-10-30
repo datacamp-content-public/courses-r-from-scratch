@@ -277,3 +277,33 @@ dim(gender_data)
 ```{r}
 ex() %>% check_output('263[[:space:]]+8', missing_msg="Did you run dim(gender_data)")
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: MultipleChoiceExercise
+key: b9405de3b0
+xp: 50
+```
+
+How many rows and columns does the `gender_data` data frame have?   If you need to refresh you memory, try `dim(gender_data)` in the console.
+
+`@possible_answers`
+263 columns, 8 rows
+[263 rows, 8 columns]
+[We don't have enough information to be sure]
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+gender_data <- read.table('http://bit.ly/gender-stats-data')
+```
+
+`@sct`
+```{r}
+
+```
