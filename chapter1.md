@@ -153,7 +153,7 @@ ex() %>% check_object("my_exotic_fruits") %>% check_equal()
 
 ---
 
-## Insert exercise title here
+## Types of variables
 
 ```yaml
 type: NormalExercise
@@ -208,4 +208,62 @@ class(gender_data)
 `@sct`
 ```{r}
 ex() %>% check_output("data\\.frame", missing_msg = "Did you display the class() of the gender_data?")
+```
+
+---
+
+## The data frame
+
+```yaml
+type: NormalExercise
+key: a43b4a146d
+xp: 100
+```
+
+In the previous exercise you found that the `gender_data` variable points to a `data.frame`.
+
+This is a new type of thing, that we have not seen before.  It is not a number or a character or a logical, it is a special type that contains a *table* of data.
+
+The data frame object is rather like a spreadsheet in Excel, but more specialized.
+
+In a typical R data analysis, we read the data into a data frame, and then we explore the data frame.
+
+We will be exploring the `gender_data` data frame for the next exercises.
+
+R has many utilities that are useful for telling us about data frames.  These are in the form of *functions*.
+
+You have used functions in mathematics.  For example, you might write $y = sin(x)$.
+
+In fact you have already seen a function.  Remember our first line:
+
+```
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+```
+
+On the Left Hand Side we have `gender_data` - the new name we give to the thing on the Right Hand Side.  The Right Hand Side is a *function call*.  The function is `read.csv`.  We call the function by adding the open parentheses, 
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
 ```
