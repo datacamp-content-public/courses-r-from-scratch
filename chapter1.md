@@ -53,5 +53,7 @@ plot(data$heath_exp_per_cap, data$mat_mort_ratio)
 
 `@sct`
 ```{r}
+test_error()
 success_msg("Nicely done.")
+test_function("read.csv", incorrect_msg = "You need the 'read.csv' function")
 ```
