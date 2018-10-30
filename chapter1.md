@@ -21,12 +21,18 @@ In R, we use words to describe our analysis.
 
 The language we use is not quite English, but it is fairly close, as you will see.
 
-The language we are using is of course *R*.  R is a programming language, that is designed specifically for data analysis and statistics.
+The language we are using is *R*.  R is a programming language, that is designed specifically for data analysis and statistics.
 
-In this exercise, we do a very simple analysis.  We load some data, and have a look at the first few rows.  Next we plot one column against another, to look for a relationship.
+In this exercise, we do a very simple analysis.  We load some data, and have a look at the first few rows.
+
+Don't worry about the details of how this works, we will come back to that.
 
 `@instructions`
-Click on Run code to run the analysis.  You will see the output in the Window on the right.
+You are starting with the DataCamp interface.  On the right you see an editor.  It has some R code, ready to run.
+
+Click on the "Run Code" button to run the analysis.  You will see the output in the Window on the right.
+
+When you've had a look, click "Submit Answer" to carry on to the next section.
 
 `@hint`
 
@@ -42,7 +48,7 @@ Click on Run code to run the analysis.  You will see the output in the Window on
 data = read.csv('http://bit.ly/gender-stats-data')
 # Show the first 6 rows
 head(data)
-# Plot GDP against maternal mortality rate
+# Plot Health Expenditure Per Capita (x axis) against the Maternal Mortality ratio (y axis)
 plot(data$heath_exp_per_cap, data$mat_mort_ratio)
 ```
 
