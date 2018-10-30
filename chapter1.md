@@ -148,5 +148,5 @@ my_exotic_fruits <- my_pomegranates + my_kiwis
 success_msg("Well done - you are all over variables")
 ex() %>% check_object("my_pomegranates") %>% check_equal()
 ex() %>% check_object("my_kiwis") %>% check_equal()
-ex() %>% check_object("my_kiwis") %>% check_equal()
+ex() %>% check_object("my_exotic_fruits") %>% check_equal()
 ```
