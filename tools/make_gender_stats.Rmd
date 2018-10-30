@@ -172,7 +172,7 @@ renamers = [
     ('Fertility rate, total (births per woman)', 'fert_rate'),
     ('GDP (current US$)', 'gdp'),
     ('Health expenditure per capita, PPP (constant 2011 international $)', 
-     'heath_exp_per_cap'),
+     'health_exp_per_cap'),
     ('Health expenditure, public (% of GDP)', 'health_exp_pub'),
     ('Primary education, pupils (% female)', 'prim_ed_girls'),
     ('Maternal mortality ratio (modeled estimate, per 100,000 live births)',
@@ -202,10 +202,9 @@ gender_stats
 
 We should write a data dictionary too.  We will have to backslash escape dollars for the Markdown output.
 
-```{python}
-with open('gender_stats_data_dict.md', 'wt') as fobj:
+
+# with open('gender_stats_data_dict.md', 'wt') as fobj:
     fobj.write('# Gender statistics data dictionary\n\n')
     for name, rename in renamers:
         name = name.replace('$', '\$')  # For Markdown
         fobj.write(f'* `{rename}`: {name}.\n')
-```
