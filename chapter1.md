@@ -53,7 +53,7 @@ plot(data$heath_exp_per_cap, data$mat_mort_ratio)
 
 `@sct`
 ```{r}
-check_error()
+test_error(incorrect_msg = "The R code has a error, try reverting to its original state")
 success_msg("Nicely done.")
-test_function("read.csv", incorrect_msg = "You need the 'read.csv' function")
+ex() %>% check_object("data") %>% check_equal()
 ```
