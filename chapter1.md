@@ -66,7 +66,7 @@ ex() %>% check_object("gender_data") %>% check_equal()
 
 ---
 
-## Insert exercise title here
+## Starting with variables
 
 ```yaml
 type: NormalExercise
