@@ -49,7 +49,7 @@ gender_data = read.csv('http://bit.ly/gender-stats-data')
 # Show the first 6 rows
 head(gender_data)
 # Plot Health Expenditure Per Capita (x axis) against the Maternal Mortality ratio (y axis)
-plot(gender_data$heath_exp_per_cap, gender_data$mat_mort_ratio)
+plot(gender_data$health_exp_per_cap, gender_data$mat_mort_ratio)
 ```
 
 `@solution`
@@ -99,7 +99,7 @@ Now go over to <https://campus.datacamp.com/courses/free-introduction-to-r/chapt
 * the DataCamp interface (that you are using now) and
 * variables in R.
 
-Just to that chapter from the tutorial.  When you get to the page *Create a vector* - stop, and come back to this page.
+Just do that chapter from the tutorial.  When you get to the page *Create a vector* - stop, and come back to this page.
 
 Now here is a little revision exercise.
 
