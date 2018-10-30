@@ -45,23 +45,23 @@ When you've had a look, click "Submit Answer" to carry on to the next section.
 `@sample_code`
 ```{r}
 # Read the data into memory
-data = read.csv('http://bit.ly/gender-stats-data')
+gender_data = read.csv('http://bit.ly/gender-stats-data')
 # Show the first 6 rows
-head(data)
+head(gender_data)
 # Plot Health Expenditure Per Capita (x axis) against the Maternal Mortality ratio (y axis)
-plot(data$heath_exp_per_cap, data$mat_mort_ratio)
+plot(gender_data$heath_exp_per_cap, gender_data$mat_mort_ratio)
 ```
 
 `@solution`
 ```{r}
 # Read the data into memory
-data = read.csv('http://bit.ly/gender-stats-data')
+gender_data = read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sct`
 ```{r}
 success_msg("Nicely done.")
-ex() %>% check_object("data") %>% check_equal()
+ex() %>% check_object("gender_data") %>% check_equal()
 ```
 
 ---
