@@ -63,3 +63,90 @@ data = read.csv('http://bit.ly/gender-stats-data')
 success_msg("Nicely done.")
 ex() %>% check_object("data") %>% check_equal()
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: 3101c3d7a1
+xp: 100
+```
+
+Now you have run your first analysis in R.
+
+Remember the first line in the code for the last exercise:
+
+```
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+```
+
+The line reads the data from <http://bit.ly/gender-stats-data> into memory, and gives the data a label, `gender_data`.
+
+There are two parts to this line, on either side of the characters that look like a left-facing arrow: `<-`.
+
+The part to the left of the `<-` is called the Left Hand Side (LHS).  This is the label we are going to use for our data.  In our case this is `gender_data`.
+
+The part to right is called the Right Hand Side (RHS).  This is something that creates our data in memory. In our case this is `read.csv('http://bit.ly/gender-stats-data')`.
+
+The label `gender_data` is also called a *variable*.
+
+Variables are very important in R, and other programming languages.  Variables are names that make it much easier for us to refer to data, and to store data from previous steps.
+
+Now go over to <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1> to learn more about:
+
+* the DataCamp interface (that you are using now) and
+* variables in R.
+
+Just to that chapter from the tutorial.  When you get to the page *Create a vector* - stop, and come back to this page.
+
+Now here is a little revision exercise.
+
+`@instructions`
+We are back to variables, after the exercises at <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1>.
+
+Remember the fruit from those exercises?   Now we get exotic.
+
+Create a variable called `my_pomegranates` and set it equal to 112.
+
+Create another variable called `my_kiwis` and set it equal to 92.
+
+Create a third variable called `my_exotic_fruits` and set it equal to the sum of `my_pomegranates` and `my_kiwis`.
+
+`@hint`
+Go back through <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1> for inspiration, if you can't remember how to set variables.
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+# Create a variable called "my_pomegranates" and set it equal to 112.
+
+# Create another variable called "my_kiwis" and set it equal to 92.
+
+# Create a third variable called "my_exotic_fruits" and set it equal to the sum of `my_pomegranates` and "my_kiwis"
+```
+
+`@solution`
+```{r}
+# Create a variable called "my_pomegranates" and set it equal to 112.
+my_pomegranates <- 112
+
+# Create another variable called "my_kiwis" and set it equal to 92.
+my_kiwis <- 92
+
+# Create a third variable called "my_exotic_fruits" and set it equal to the sum of `my_pomegranates` and "my_kiwis"
+my_exotic_fruits <- my_pomegranates + my_kiwis
+```
+
+`@sct`
+```{r}
+success_msg("Well done - you are all over variables")
+ex() %>% check_object("my_pomegranates") %>% check_equal()
+ex() %>% check_object("my_kiwis") %>% check_equal()
+ex() %>% check_object("my_kiwis") %>% check_equal()
+```
