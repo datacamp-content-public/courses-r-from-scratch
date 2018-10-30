@@ -53,7 +53,6 @@ plot(data$heath_exp_per_cap, data$mat_mort_ratio)
 
 `@sct`
 ```{r}
-test_error(incorrect_msg = "The R code has a error, try reverting to its original state")
 success_msg("Nicely done.")
 ex() %>% check_object("data") %>% check_equal()
 ```
