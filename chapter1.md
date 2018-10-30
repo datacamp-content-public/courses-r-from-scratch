@@ -212,7 +212,7 @@ ex() %>% check_output("data\\.frame", missing_msg = "Did you display the class()
 
 ---
 
-## The data frame
+## Functions and the data frame
 
 ```yaml
 type: NormalExercise
@@ -232,7 +232,9 @@ We will be exploring the `gender_data` data frame for the next exercises.
 
 R has many utilities that are useful for telling us about data frames.  These are in the form of *functions*.
 
-You have used functions in mathematics.  For example, you might write $y = sin(x)$.
+You have used functions in mathematics.  For example, you might write $y = sin(x)$.  Here `sin` is the _function_, and `x` (inside the parentheses) is the _argument_.  $sin(x)$ means - apply the function `sin` to the argument `x`, and return the value.
+
+R functions work the same way.
 
 In fact you have already seen a function.  Remember our first line:
 
@@ -240,30 +242,36 @@ In fact you have already seen a function.  Remember our first line:
 gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
-On the Left Hand Side we have `gender_data` - the new name we give to the thing on the Right Hand Side.  The Right Hand Side is a *function call*.  The function is `read.csv`.  We call the function by adding the open parentheses, 
+On the Left Hand Side we have `gender_data` - the new name we give to the thing on the Right Hand Side.  The Right Hand Side is a *function call*.  The function is `read.csv`.  The argument is the URL `'http://bit.ly/gender-stats-data'`.  We *call* the `read.csv` function with the argument `'http://bit.ly/gender-stats-data'` to return a value, where the value is the data frame.
+
+R has many useful functions that work on data frames.  Let's start with the function `dim`.
 
 `@instructions`
+In the code window, you will see the code to call the `dim` function with the `gender_data` data frame as the argument.
 
+Run the code to see what `dim` returns.  Submit the code to go on the next question.
 
 `@hint`
 
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
-
+# Call the "dim" function on the data frame.
+# gender_data is already loaded
+dim(gender_data)
 ```
 
 `@solution`
 ```{r}
-
+dim(gender_data)
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% check_output('263[[:space:]]+8', missing_msg="Did you run dim(gender_data)"
 ```
