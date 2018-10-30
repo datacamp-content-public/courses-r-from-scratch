@@ -246,6 +246,8 @@ On the Left Hand Side we have `gender_data` - the new name we give to the thing 
 
 R has many useful functions that work on data frames.  Let's start with the function `dim`.
 
+The `dim` function displays the number of rows and columns in the data frame.
+
 `@instructions`
 In the code window, you will see the code to call the `dim` function with the `gender_data` data frame as the argument.
 
