@@ -150,3 +150,62 @@ ex() %>% check_object("my_pomegranates") %>% check_equal()
 ex() %>% check_object("my_kiwis") %>% check_equal()
 ex() %>% check_object("my_exotic_fruits") %>% check_equal()
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: 9c69cb7092
+xp: 100
+```
+
+This tiny exercise is more revision from <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1>.
+
+Remember that the first line of R code we ran in this tutorial was:
+
+```
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+```
+
+In the variables tutorial, you found how to find what type of thing a variable contained, using the `class` function.
+
+You saw examples of numeric variables, and character variables.
+
+`gender_data` is also a variable.  As you remember, a variable is a name that points to a thing.
+
+What type of thing does `gender_data` point to?
+
+`@instructions`
+Use `class` to find out what type of thing `gender_data` points to.  Display the type.
+
+`@hint`
+To show what type of thing a variable `my_variable` points to, use `class(my_variable)`.
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+# First we create the variable again
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+
+# Here, write the code to display what type of thing "gender_data" is pointing to.
+```
+
+`@solution`
+```{r}
+# First we create the variable again
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+
+# Here, write the code to display what type of thing "gender_data" is pointing to.
+class(gender_data)
+```
+
+`@sct`
+```{r}
+ex() %>% check_output(".*data\.frame.*", missing_msg = "Did you display the 
+```
