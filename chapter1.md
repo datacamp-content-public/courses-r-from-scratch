@@ -33,17 +33,22 @@ Click on Run code to run the analysis.  You will see the output in the Window on
 
 `@pre_exercise_code`
 ```{r}
-data = read.csv('')
+
 ```
 
 `@sample_code`
 ```{r}
-
+# Read the data into memory
+data = read.csv('http://bit.ly/gender-stats-data')
+# Show the first 6 rows
+head(data)
+# Plot GDP against maternal mortality rate
+plot(data$gdp, data$mat_mort_rate)
 ```
 
 `@solution`
 ```{r}
-2 + 2
+
 ```
 
 `@sct`
