@@ -43,7 +43,7 @@ data = read.csv('http://bit.ly/gender-stats-data')
 # Show the first 6 rows
 head(data)
 # Plot GDP against maternal mortality rate
-plot(data$gdp, data$mat_mort_rate)
+plot(data$heath_exp_per_cap, data$mat_mort_ratio)
 ```
 
 `@solution`
@@ -53,5 +53,5 @@ plot(data$gdp, data$mat_mort_rate)
 
 `@sct`
 ```{r}
-
+success_msg("Nicely done.")
 ```
