@@ -153,7 +153,7 @@ ex() %>% check_object("my_exotic_fruits") %>% check_equal()
 
 ---
 
-## Types of variables
+## Variables and types
 
 ```yaml
 type: NormalExercise
