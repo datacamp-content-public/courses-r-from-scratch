@@ -273,5 +273,5 @@ dim(gender_data)
 
 `@sct`
 ```{r}
-ex() %>% check_output('263[[:space:]]+8', missing_msg="Did you run dim(gender_data)"
+ex() %>% check_output('263[[:space:]]+8', missing_msg="Did you run dim(gender_data)")
 ```
