@@ -207,5 +207,5 @@ class(gender_data)
 
 `@sct`
 ```{r}
-ex() %>% check_output("data\\.frame", missing_msg = "Did you display the class() of the gender_data?"")
+ex() %>% check_output("data\\.frame", missing_msg = "Did you display the class() of the gender_data?")
 ```
