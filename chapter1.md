@@ -280,7 +280,7 @@ ex() %>% check_output('263[[:space:]]+8', missing_msg="Did you run dim(gender_da
 
 ---
 
-## Insert exercise title here
+## A dim question
 
 ```yaml
 type: MultipleChoiceExercise
@@ -291,12 +291,12 @@ xp: 50
 How many rows and columns does the `gender_data` data frame have?   If you need to refresh you memory, try `dim(gender_data)` in the console.
 
 `@possible_answers`
-263 columns, 8 rows
-[263 rows, 8 columns]
-We don't have enough information to be sure
+- 263 columns, 8 rows
+- [263 rows, 8 columns]
+- We don't have enough information to be sure
 
 `@hint`
-
+The first value from `dim` is the number of rows, the second value is the number of columns.
 
 `@pre_exercise_code`
 ```{r}
