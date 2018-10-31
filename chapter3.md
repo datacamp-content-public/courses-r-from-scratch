@@ -41,7 +41,7 @@ Let us remind ourselves about the data.  Run the code in the code window.
 
 ---
 
-## Insert exercise title here
+## A video
 
 ```yaml
 type: VideoExercise
@@ -49,5 +49,5 @@ key: 8961e8aa9e
 xp: 50
 ```
 
-`@projector_key`
-2fb04159f652e516f9262f88fcbff811
+*** =video_link
+//player.vimeo.com/video/160903486
