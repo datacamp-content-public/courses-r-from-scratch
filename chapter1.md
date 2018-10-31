@@ -291,9 +291,8 @@ xp: 50
 How many rows and columns does the `gender_data` data frame have?   If you need to refresh you memory, try `dim(gender_data)` in the console.
 
 `@possible_answers`
-- 263 columns, 8 rows
-- 263 rows, 8 columns
-- We don't have enough information to be sure
+- `speed` is the response variable and `dist` is the explanatory variable
+- `dist` is the response variable and `speed` is the explanatory variable
 
 `@hint`
 The first value from `dim` is the number of rows, the second value is the number of columns.
@@ -305,5 +304,5 @@ gender_data <- read.table('http://bit.ly/gender-stats-data')
 
 `@sct`
 ```{r}
-test_mc(correct = 2)
+
 ```
