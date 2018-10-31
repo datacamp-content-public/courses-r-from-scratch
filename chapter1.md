@@ -291,7 +291,8 @@ xp: 50
 What do you see?
 
 `@possible_answers`
-
+- `speed` is the response variable and `dist` is the explanatory variable
+- `dist` is the response variable and `speed` is the explanatory variable
 
 `@hint`
 
