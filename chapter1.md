@@ -359,5 +359,7 @@ names(gender_data)
 `@sct`
 ```{r}
 state <- ex()
-check_output(state, 'country')
+for (name in names(gender_data)) {
+    check_output(res, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
+}
 ```
