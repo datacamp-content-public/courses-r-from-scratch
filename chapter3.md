@@ -38,3 +38,17 @@ Let us remind ourselves about the data.  Run the code in the code window.
 ```{r}
 
 ```
+
+---
+
+## A video exercise
+
+
+```yaml
+type: VideoExercise
+lang: r
+xp: 50
+video_link: //player.vimeo.com/video/160339466
+video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
+```
+{%- language name="Normal", type="py" -%}
