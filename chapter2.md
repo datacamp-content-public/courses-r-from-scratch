@@ -280,7 +280,6 @@ show descriptive statistics for each column.
 
 The `gender_data` data frame is already loaded.
 
-
 `@hint`
 You will need something starting with `summary(` and ending with `)`.  What
 goes inside the brackets?
