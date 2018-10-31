@@ -12,6 +12,7 @@ xp: 50
 video_link: //player.vimeo.com/video/298272711
 ```
 
+
 ---
 
 ## A first analysis in R
@@ -20,7 +21,7 @@ video_link: //player.vimeo.com/video/298272711
 type: NormalExercise
 key: 2bafef99a3
 lang: r
-xp: 50
+xp: 100
 skills: 1
 ```
 
