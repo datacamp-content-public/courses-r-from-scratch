@@ -38,3 +38,15 @@ Let us remind ourselves about the data.  Run the code in the code window.
 ```{r}
 
 ```
+
+---
+
+## Course Trailer for Causal Inference with R - Experiments
+
+```yaml
+type: VideoExercise
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/280255549
+```
