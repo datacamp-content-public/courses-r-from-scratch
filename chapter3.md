@@ -47,6 +47,8 @@ Let us remind ourselves about the data.  Run the code in the code window.
 type: VideoExercise
 key: 2c845540dc
 xp: 50
+video_link: //player.vimeo.com/video/160339466
+video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
 ```
 
 `@projector_key`
