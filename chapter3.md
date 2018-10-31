@@ -41,13 +41,13 @@ Let us remind ourselves about the data.  Run the code in the code window.
 
 ---
 
-## A video exercise
+## Insert exercise title here
 
 ```yaml
 type: VideoExercise
-key: 215d2437ae
-lang: r
+key: 2c845540dc
 xp: 50
-video_link: //player.vimeo.com/video/160339466
-video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
 ```
+
+`@projector_key`
+fb1ff66627aae8d3992086b69b2746f9
