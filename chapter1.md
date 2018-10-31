@@ -3,6 +3,19 @@ title: 'The R way'
 description: 'R is a language that allows you to define your data analysis in words.   It is a completely different to something like Excel, where you do much of your analysis by clicking on the graphical user interface. '
 ---
 
+## The R difference
+
+```yaml
+type: VideoExercise
+key: 8961e8aa9e
+xp: 50
+```
+
+*** =video_link
+//player.vimeo.com/video/244451868
+
+---
+
 ## A first analysis in R
 
 ```yaml

@@ -38,14 +38,3 @@ Let us remind ourselves about the data.  Run the code in the code window.
 ```{r}
 
 ```
-
----
-
-## A video
-
-```yaml
-type: VideoExercise
-key: 8961e8aa9e
-xp: 50
-video_link: //player.vimeo.com/video/160903486
-```
