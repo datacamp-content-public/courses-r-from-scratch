@@ -292,7 +292,7 @@ How many rows and columns does the `gender_data` data frame have?   If you need 
 
 `@possible_answers`
 - 263 columns, 8 rows
-- [263 rows, 8 columns]
+- 263 rows, 8 columns
 - We don't have enough information to be sure
 
 `@hint`
@@ -305,5 +305,5 @@ gender_data <- read.table('http://bit.ly/gender-stats-data')
 
 `@sct`
 ```{r}
-
+test_mc(correct = 2)
 ```
