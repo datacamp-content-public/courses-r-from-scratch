@@ -15,8 +15,6 @@ skills: 1
 
 R does not work the same way as packages like Excel.
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YyDYfeEPtRA/0.jpg)](http://www.youtube.com/watch?v=YYyDYfeEPtRA)
-
 In Excel, you use the mouse and the menus to perform your analysis.
 
 In R, we use words to describe our analysis.
