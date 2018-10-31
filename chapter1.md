@@ -304,5 +304,5 @@ What do you see?
 
 `@sct`
 ```{r}
-
+test_mc(correct = 2)
 ```
