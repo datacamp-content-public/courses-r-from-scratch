@@ -9,9 +9,8 @@ description: 'R is a language that allows you to define your data analysis in wo
 type: VideoExercise
 key: 8961e8aa9e
 xp: 50
-video_link: //player.vimeo.com/video/244451868
+video_link: //player.vimeo.com/video/298272711
 ```
-
 
 ---
 
@@ -21,23 +20,27 @@ video_link: //player.vimeo.com/video/244451868
 type: NormalExercise
 key: 2bafef99a3
 lang: r
-xp: 100
+xp: 50
 skills: 1
 ```
 
-R does not work the same way as packages like Excel.
+The first exercise is to run the analysis from the video.
 
-In Excel, you use the mouse and the menus to perform your analysis.
+The data we are analyzing are a subset from this dataset from the World Bank
+on gender and inequality:
+<https://data.worldbank.org/data-catalog/gender-statistics>.
 
-In R, we use words to describe our analysis.
+The subset is a selection of variables for every country, for each variable,
+we have taken the mean values from 2012 through 2016.
 
-The language we use is not quite English, but it is fairly close, as you will see.
+Here is the data files:
 
-The language we are using is *R*.  R is a programming language, that is designed specifically for data analysis and statistics.
+* [variable description](http://bit.ly/gender-stats-variables)
+* [data file](http://bit.ly/gender-stats-data).
 
-In this exercise, we do a very simple analysis.  We load some data, and have a look at the first few rows.
+As you have already seen, we will load some data, and have a look at the first few rows.
 
-Don't worry about the details of how this works, we will come back to that.
+Don't worry about the details of how this works, we will come back to those over the rest of the course.
 
 `@instructions`
 You are starting with the DataCamp interface.  On the right you see an editor.  It has some R code, ready to run.
