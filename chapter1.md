@@ -9,10 +9,9 @@ description: 'R is a language that allows you to define your data analysis in wo
 type: VideoExercise
 key: 8961e8aa9e
 xp: 50
+video_link: //player.vimeo.com/video/244451868
 ```
 
-*** =video_link
-//player.vimeo.com/video/244451868
 
 ---
 
