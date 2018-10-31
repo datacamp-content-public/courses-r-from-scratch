@@ -284,22 +284,21 @@ ex() %>% check_output('263[[:space:]]+8', missing_msg="Did you run dim(gender_da
 
 ```yaml
 type: MultipleChoiceExercise
-key: b9405de3b0
+key: b3ee7c968c
 xp: 50
 ```
 
-How many rows and columns does the `gender_data` data frame have?   If you need to refresh you memory, try `dim(gender_data)` in the console.
+What do you see?
 
 `@possible_answers`
-- `speed` is the response variable and `dist` is the explanatory variable
-- `dist` is the response variable and `speed` is the explanatory variable
+
 
 `@hint`
-The first value from `dim` is the number of rows, the second value is the number of columns.
+
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.table('http://bit.ly/gender-stats-data')
+
 ```
 
 `@sct`
