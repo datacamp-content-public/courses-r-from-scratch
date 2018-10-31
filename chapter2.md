@@ -82,7 +82,9 @@ key: b3ee7c968c
 xp: 50
 ```
 
-If you can't remember the output, try executing `dim(gender_data)` in the console.  `gender_data` is already loaded.
+If you can't remember the output of `dim`, try executing `dim(gender_data)` in
+the R Console (that's the bottom right pane in the DataCamp interface).
+`gender_data` is already loaded.
 
 Looking at the output, which of the following is true?
 
@@ -173,8 +175,9 @@ Another way of getting a quick view of the data frame is to use the `str` functi
 We have now seen several functions, and we will see several more.  It will soon
 be difficult to remember exactly what each of these functions do.
 
-To get help for a function, go to the console window, and type `?` followed by
-the function name.  For example, try typing `?str` and pressing Enter.  You should see the help for the `str` function appear.
+To get help for a function, go to the R Console window, and type `?` followed
+by the function name.  For example, try typing `?str` and pressing Enter.  You
+should see the help for the `str` function appear.
 
 As you will see from the help, `str` shows the "structure" of an R "object" - such as a data frame.
 
@@ -222,22 +225,33 @@ key: 6f33b5498c
 xp: 50
 ```
 
-
+If you can't remember the output of `str`, try executing `str(gender_data)` in
+the R Console. `gender_data` is already loaded.
 
 `@possible_answers`
-
+- `gender_data` has one column of type "num" (numerical) and seven columns of
+  type "character".
+- `gender_data` has four columns of type "num" (numerical) and four columns of
+  type "character".
+- `gender_data` has one column of type "Character" and seven of type "num"
+  (numerical).
+- `gender_data` has one column of type "Factor" and seven of type "num"
+  (numerical).
 
 `@hint`
-
+`str` output has one line per column.  The line starts with a `$` followed by
+the variable name, followed by the data type.
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sct`
 ```{r}
-
+msg0 <- "Look at the column data types, after the column names in the ouput"
+msg1 <- "Yes, right, there is one Factor columns and seven numerical columns and one Factor column"
+ex() %>% check_mc(4, feedback_msgs = c(msg0, msg0, msg0, msg1))
 ```
 
 ---
