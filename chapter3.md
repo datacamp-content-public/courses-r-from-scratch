@@ -38,38 +38,3 @@ Let us remind ourselves about the data.  Run the code in the code window.
 ```{r}
 
 ```
-
-## Another introduction to columns
-
-```yaml
-type: NormalExercise
-xp: 100
-```
-
-Let us remind ourselves about the data.  Run the code in the code window.
-
-`@instructions`
-
-
-`@hint`
-
-
-`@pre_exercise_code`
-```{r}
-
-```
-
-`@sample_code`
-```{r}
-# Sample
-```
-
-`@solution`
-```{r}
-a <- 1
-```
-
-`@sct`
-```{r}
-
-```
