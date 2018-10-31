@@ -360,6 +360,6 @@ names(gender_data)
 ```{r}
 state <- ex()
 for (name in names(gender_data)) {
-    check_output(state, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
+  check_output(state, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
 }
 ```
