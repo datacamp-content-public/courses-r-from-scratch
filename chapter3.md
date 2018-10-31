@@ -45,9 +45,9 @@ Let us remind ourselves about the data.  Run the code in the code window.
 
 ```yaml
 type: VideoExercise
+key: 51dbd5030c
 lang: r
 xp: 50
 skills: 1
-video_link: "//player.vimeo.com/video/280255549"
-key: 51dbd5030c
+video_link: //player.vimeo.com/video/280255549
 ```
