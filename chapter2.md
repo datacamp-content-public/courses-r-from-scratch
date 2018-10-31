@@ -307,7 +307,7 @@ for (name in names(gender_data)) {
 }
 check_output(state, 'Median',
              missing_msg='Expecting to see medians')
-check_output(state, 'NA's   :34',
+check_output(state, 'NA\'s   :34',
              missing_msg='Expecting to see NA counts')
 ```
 
