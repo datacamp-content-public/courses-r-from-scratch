@@ -293,6 +293,7 @@ What do you see?
 `@possible_answers`
 - `speed` is the response variable and `dist` is the explanatory variable
 - `dist` is the response variable and `speed` is the explanatory variable
+- neither
 
 `@hint`
 
@@ -304,5 +305,8 @@ What do you see?
 
 `@sct`
 ```{r}
-test_mc(correct = 2)
+msg1 <- "Not good, try again!"
+msg2 <- "Nice one!"
+msg3 <- "Not quite, give it another shot."
+ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 ```
