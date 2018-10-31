@@ -155,3 +155,135 @@ for (name in names(gender_data)) {
   check_output(state, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
 }
 ```
+
+---
+
+## Structure of the data frame
+
+```yaml
+type: NormalExercise
+key: 5e235c1b49
+xp: 100
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
+
+---
+
+## What's the structure?
+
+```yaml
+type: MultipleChoiceExercise
+key: 6f33b5498c
+xp: 50
+```
+
+
+
+`@possible_answers`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
+
+---
+
+## Summarizing
+
+```yaml
+type: NormalExercise
+key: 6d072576e3
+xp: 100
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
+
+---
+
+## What's in a summary?
+
+```yaml
+type: MultipleChoiceExercise
+key: 561d6b2cae
+xp: 50
+```
+
+
+
+`@possible_answers`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
