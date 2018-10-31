@@ -264,32 +264,52 @@ key: 6d072576e3
 xp: 100
 ```
 
+Functions like `dim`, `names` and `str` show us the layout of the data, but we
+often want more information on the values in the columns.
 
+`summary` is a powerful function that generates descriptive statistics for the
+data in each column.
+
+Try `?summary` in the R Console for more information.
+
+For the numerical columns, you will see minimum, maximum, median, mean, and various other useful descriptive statistics.
 
 `@instructions`
+Use the `summary` function with the `gender_data` data frame as an argument, to
+show descriptive statistics for each column.
+
+The `gender_data` data frame is already loaded.
 
 
 `@hint`
-
+You will need something starting with `summary(` and ending with `)`.  What
+goes inside the brackets?
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
-
+# Display summary statistics from the gender_data data frame
 ```
 
 `@solution`
 ```{r}
-
+summary(gender_data)
 ```
 
 `@sct`
 ```{r}
-
+state <- ex()
+for (name in names(gender_data)) {
+  check_output(state, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
+}
+check_output(state, 'Median',
+             missing_msg='Expecting to see medians')
+check_output(state, 'NA's   :34',
+             missing_msg='Expecting to see NA counts')
 ```
 
 ---
