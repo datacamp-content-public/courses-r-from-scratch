@@ -21,7 +21,7 @@ Let us remind ourselves about the data.  Run the code in the code window.
 
 `@pre_exercise_code`
 ```{r}
-gender_stats <- read.csv('assets/gender_data.csv')
+gender_stats <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
