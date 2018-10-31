@@ -305,3 +305,41 @@ xp: 50
 ```{r}
 
 ```
+
+---
+
+## Heads and tails
+
+```yaml
+type: NormalExercise
+key: 316cdc7619
+xp: 100
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
