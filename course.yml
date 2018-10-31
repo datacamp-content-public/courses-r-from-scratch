@@ -1,5 +1,5 @@
 title: R from scratch
-description: Course description goes here.
+description: An introduction to R that starts with data
 programming_language: r
 from: "r-base-prod:v1.0.2"
 #from: "tidyverse-base-prod:v1.0.2"
