@@ -12,6 +12,16 @@ xp: 50
 video_link: //player.vimeo.com/video/244451868
 ```
 
+Here we are analyzing a subset from this dataset from the World Bank on gender
+and inequality: <https://data.worldbank.org/data-catalog/gender-statistics>.
+
+The subset is a selection of variables for every country, for each variable,
+we have taken the mean values from 2012 through 2016.
+
+Here is the data subset we are using:
+
+* [variable description](http://bit.ly/gender-stats-variables)
+* [data file](http://bit.ly/gender-stats-data).
 
 ---
 
