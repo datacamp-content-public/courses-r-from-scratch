@@ -43,7 +43,7 @@ head(gender_stats)
 
 ```yaml
 type: NormalExercise
-key: 12aa3a3b6f
+key: 12aa3a3b60
 xp: 100
 ```
 
