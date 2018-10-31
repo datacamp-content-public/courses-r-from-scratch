@@ -3,7 +3,7 @@ title: 'Analyzing data'
 description: 'Data frames contain data, arranged in columns.  In this chapter we get the column data and analyze it, using summary statistics and plots.'
 ---
 
-## Insert exercise title here
+## An introduction to columns
 
 ```yaml
 type: NormalExercise
