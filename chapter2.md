@@ -14,7 +14,9 @@ xp: 100
 In the last chapter you found that the `gender_data` variable points to
 a `data.frame`.
 
-This is a new type of thing, that we have not seen before.  It is not a number or a character or a logical, it is a special type that contains a *table* of data.
+This is a new type of thing, that we have not seen before.  It is not
+a number or a character or a logical, it is a special type that contains
+a *table* of data.
 
 The data frame object is rather like a spreadsheet in Excel, but more specialized.
 
@@ -166,32 +168,48 @@ key: 5e235c1b49
 xp: 100
 ```
 
+Another way of getting a quick view of the data frame is to use the `str` function.
 
+We have now seen several functions, and we will see several more.  It will soon
+be difficult to remember exactly what each of these functions do.
+
+To get help for a function, go to the console window, and type `?` followed by
+the function name.  For example, try typing `?str` and pressing Enter.  You should see the help for the `str` function appear.
+
+As you will see from the help, `str` shows the "structure" of an R "object" - such as a data frame.
 
 `@instructions`
+Use the `str` function with the `gender_data` data frame as an argument, to
+show the structure of the `gender_data` data frame.
 
+The `gender_data` data frame is already loaded.
 
 `@hint`
-
+You will need something starting with `str(` and ending with `)`.  What goes inside the brackets?
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
-
+# Display the structure of the gender_data data frame
 ```
 
 `@solution`
 ```{r}
-
+str(gender_data)
 ```
 
 `@sct`
 ```{r}
-
+state <- ex()
+for (name in names(gender_data)) {
+  check_output(state, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
+}
+check_output(state, '263 obs. of  8 variables',
+             missing_msg='Expecting to see no of observations and variables')
 ```
 
 ---
