@@ -312,3 +312,52 @@ msg2 <- "Yes, dim shows number of rows and number of columns"
 msg3 <- "dim does show us the number of rows and columns."
 ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 ```
+
+---
+
+## Column names
+
+```yaml
+type: NormalExercise
+key: 34dea736b6
+xp: 100
+```
+
+`names` is another useful function that operates on data frames.
+
+It shows us the names of the columns.
+
+For example, say we have a data frame variable `df`.  We can show the names of the columns with:
+
+```
+names(df)
+```
+
+`@instructions`
+Use the `names` function with the `gender_data` data frame as an argument, to show the names of the data frame columns.
+
+The `gender_data` data frame is already loaded.
+
+`@hint`
+You will need something starting with `names(` and ending with `)`.  What goes inside the brackets?
+
+`@pre_exercise_code`
+```{r}
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+```
+
+`@sample_code`
+```{r}
+# Display the names from the gender_data data frame
+```
+
+`@solution`
+```{r}
+names(gender_data)
+```
+
+`@sct`
+```{r}
+state <- ex()
+check_output(state, 'country')
+```
