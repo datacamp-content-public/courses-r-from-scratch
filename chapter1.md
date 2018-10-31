@@ -277,38 +277,3 @@ dim(gender_data)
 ```{r}
 ex() %>% check_output('263[[:space:]]+8', missing_msg="Did you run dim(gender_data)")
 ```
-
----
-
-## A dim question
-
-```yaml
-type: MultipleChoiceExercise
-key: b3ee7c968c
-xp: 50
-```
-
-If you can't remember the output, try executing `dim(gender_data)` in the console.  `gender_data` is already loaded.
-
-Looking at the output, which of the following is true?
-
-`@possible_answers`
-- `gender_data` has 263 columns and 8 rows;
-- `gender_data` has 263 rows and 8 columns;
-- the output from `dim` does not tell us the number of rows, columns.
-
-`@hint`
-The first output from `dim` is the number of rows.
-
-`@pre_exercise_code`
-```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
-```
-
-`@sct`
-```{r}
-msg1 <- "Look carefully at the order of columns and rows"
-msg2 <- "Yes, dim shows number of rows and number of columns"
-msg3 <- "dim does show us the number of rows and columns."
-ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
-```
