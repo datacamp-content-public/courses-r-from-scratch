@@ -289,7 +289,6 @@ As you might expect, R has a `median` function, that works in a similar way to
 the `mean` function.  Like the `mean` function, it has an `na.rm` option.
 
 `@instructions`
-
 First calculate the median of `health_exp_col` the default way, and show the result.  It should show `NA`.
 
 Then calculate the median of `health_exp_col`, setting the option to drop the
