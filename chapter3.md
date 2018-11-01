@@ -175,43 +175,23 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 
 ---
 
-## What's missing in the mean?
+## Insert exercise title here
 
 ```yaml
-type: NormalExercise
-key: a6dfce900b
-xp: 100
+type: MultipleChoiceExercise
+key: 34aa5cb6e7
+xp: 50
 ```
 
-We have a variable `health_exp_col` that points to the `health_exp_per_cap`
-column of the `gender_data` data frame.  We just found out that some countries have missing data for this column - they have `NA` values.
 
-Now consider what would happen if we calculate a mean over these values.  You can imagine two ways of dealing with the `NA` values.
 
-- give up on calculating the mean because you cannot guess the values which
-  have NA.
-- drop all the NA values, and take the mean of the rest.
-
-Run the code to the left to
-
-`@instructions`
+`@possible_answers`
 
 
 `@hint`
 
 
 `@pre_exercise_code`
-```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
-health_exp_col <- gender_data$health_exp_per_cap
-```
-
-`@sample_code`
-```{r}
-
-```
-
-`@solution`
 ```{r}
 
 ```
