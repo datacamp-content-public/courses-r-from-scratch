@@ -66,11 +66,9 @@ column.
 
 You have just done the histogram for `mat_mort_ratio`.  Now do the histogram for `health_exp_per_cap`.
 
-
 `@instructions`
 Show the histogram of the values in the `health_exp_per_cap` column of
 `gender_data`.
-
 
 `@hint`
 Did you call the `hist` function on the values of the `health_exp_per_cap`
