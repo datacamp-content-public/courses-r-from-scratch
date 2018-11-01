@@ -433,3 +433,41 @@ gender_data$gdp / gender_data$population
 ex() %>% check_output('610\\.1331[[:space:]]+4268\\.1406[[:space:]]+4878\\.2404',
              missing_msg='Expecting values to start with 610.1331  4268.1406 4878.2404')
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: 8f7d4d205f
+xp: 100
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
