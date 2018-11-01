@@ -225,7 +225,7 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 ```yaml
 type: NormalExercise
 key: 0d8f1f12b2
-xp: 20
+xp: 100
 ```
 
 We found that, by default, R refuses to calculate a mean, when there are `NA`
