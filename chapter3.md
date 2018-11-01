@@ -436,7 +436,7 @@ ex() %>% check_output('610\\.1331[[:space:]]+4268\\.1406[[:space:]]+4878\\.2404'
 
 ---
 
-## Insert exercise title here
+## Full cash value
 
 ```yaml
 type: NormalExercise
@@ -444,30 +444,42 @@ key: 8f7d4d205f
 xp: 100
 ```
 
+Have a look at [the column descriptions](http://bit.ly/gender-stats-variables) for this data file.
 
+The column `health_exp_per_cap` is the health expenditure per person in the country.
+
+Now we want to calculate the total dollar expenditure on health.
 
 `@instructions`
+Calculate and show the total dollar health expenditure for every country, by
+multiplying the values in the `health_exp_per_cap` column by the corresponding
+values in the `population` column.
 
+If you did it right, you will see lots of big numbers in scientific notation,
+like `5.271766e+09` ($5.271766 * 10^9$).
 
 `@hint`
-
+Multiply `gender_data$health_exp_per_cap` by `gender_data$population`.
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
+# Multiply the 'health_exp_per_cap` values by the 'population' values.
 
 ```
 
 `@solution`
 ```{r}
-
+gender_data$health_exp_per_cap * gender_data$population
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% check_output(
+  '5\\.271766e\\+09[[:space:]]+1\\.658458e\\+09[[:space:]]+3\\.404615e\\+10',
+  missing_msg='Expecting values to start with 5.271766e+09 1.658458e+09 3.404615e+10')
 ```
