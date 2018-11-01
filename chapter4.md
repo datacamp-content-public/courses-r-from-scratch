@@ -8,35 +8,43 @@ description: 'R has very powerful tools for looking at data with plots.  We expl
 ```yaml
 type: NormalExercise
 key: 37d36434b1
-xp: 100
+xp: 20
 ```
 
-Histogram of a column from the data frame.
+R has a very powerful set of functions for plotting data.
+
+It is easy to make simple plots, but, with a little experience, you can make almost any plot you want.
+
+To start, we will explore the values in the `mat_mort_ratio` column of our data frame.
+
+One simple thing we could do, is a histogram.  R has a `hist` function, to make histograms.  Here is a histogram for the `mat_mort_ratio` column.
 
 `@instructions`
-
+Run the code in the script window, to show the histogram of the `mat_mort_ratio` values.  Click "Submit" when you have finished.
 
 `@hint`
-
+If you have deleted the code, copy paste `hist(gender_data$mat_mort_ratio)`
+into the script window.
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
-
+# Show a histogram of the `mat_mort_ratio` values.
+hist(gender_data$mat_mort_ratio)
 ```
 
 `@solution`
 ```{r}
-
+hist(gender_data$mat_mort_ratio)
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% check_function("hist") %>% check_arg("gender_data") %>% check_equal()
 ```
 
 ---
