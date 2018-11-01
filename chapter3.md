@@ -27,7 +27,6 @@ gender_data$health_exp_per_cap
 Try it in the R Console.
 
 `@instructions`
-
 Use the `$` method to display all the values in the `mat_mort_ratio` column of `gender_data`
 
 `gender_data` is already loaded.
