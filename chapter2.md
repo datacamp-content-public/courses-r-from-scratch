@@ -389,6 +389,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```{r}
 # Display the first six rows from the gender_data data frame.
 
+
 # Now display the last six rows from the data frame.
 ```
 
@@ -402,9 +403,9 @@ tail(gender_data)
 ```{r}
 state <- ex()
 check_output(state,
-  '1    Afghanistan   4.95450  19961015094[[:space:]]+     161.1380',
+  '1    Afghanistan   4\\.95450  19961015094[[:space:]]+     161\\.1380',
   missing_msg='Did you display the value for "head(gender_data)"?')
 check_output(state,
-  '258 Virgin Islands (U.S.)  1.760000 3.812000e+09',
+  '258 Virgin Islands \\(U\\.S\\.\\)  1\\.760000 3\\.812000e\\+09',
   missing_msg='Did you display the value for "tail(gender_data)"?')
 ```
