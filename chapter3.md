@@ -125,6 +125,34 @@ check_output(state, '115\\.51988',
 
 ---
 
+## What's in an NA?
+
+```yaml
+type: MultipleChoiceExercise
+key: 7e49bc6626
+xp: 50
+```
+
+
+
+`@possible_answers`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
+
+---
+
 ## What's missing in the mean?
 
 ```yaml
