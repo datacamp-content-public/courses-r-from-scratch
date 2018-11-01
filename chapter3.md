@@ -220,6 +220,44 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 
 ---
 
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: 1b2d5f945f
+xp: 100
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
+
+---
+
 ## More arguments
 
 ```yaml
