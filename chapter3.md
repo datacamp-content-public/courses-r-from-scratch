@@ -308,8 +308,11 @@ health_exp_col <- gender_data$health_exp_per_cap
 # First display the value R returns for the median, by default.
 # Your code will start "median(health_exp_col".
 
+
 # Next display the value R returns for the median, when dropping NA values.
 # Your code will start "median(health_exp_col".
+
+
 ```
 
 `@solution`
@@ -337,32 +340,47 @@ key: 08b638fb44
 xp: 100
 ```
 
-Calculating the per-capita GDP.  First elementwise, with indexing.
+Oftentimes, we want to run calculations on column values.
+
+For example, our data frame has these columns:
+
+- `gdp` : Gross Domestic Product.
+- `population` : total population.
+
+We might want to calculate the Gross Domestic Product per person.
+
+To get the first value of `gdp`, we can use `gender_data$gdp[1]`.  Notice the
+square brackets at the end, and inside the brackets, the index of the value we
+want.  Try it in the R console.
+
+`gender_data$population[1]` will give us the first value for `population`.
 
 `@instructions`
-
+Divide the first value of the `gdp` column by the first value of the `population` column, to give the GDP per person, for the first row.
 
 `@hint`
-
+Are you using `gender_data$gdp[1]` and `gender_data$population[1]`?
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
+# Show the first value of gdp divided by the first value in poplulation
 
 ```
 
 `@solution`
 ```{r}
-
+gender_data$gdp[1] / gender_data$population[1]
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% check_output('610\\.1331',
+             missing_msg='Expecting to see value 610.1331')
 ```
 
 ---
