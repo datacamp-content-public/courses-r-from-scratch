@@ -218,46 +218,6 @@ msg3 <- "If that were true, you should see the mean of the not-NA values in the 
 ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 ```
 
----
-
-## Insert exercise title here
-
-```yaml
-type: NormalExercise
-key: 1b2d5f945f
-xp: 100
-```
-
-
-
-`@instructions`
-
-
-`@hint`
-
-
-`@pre_exercise_code`
-```{r}
-
-```
-
-`@sample_code`
-```{r}
-
-```
-
-`@solution`
-```{r}
-
-```
-
-`@sct`
-```{r}
-
-```
-
----
-
 ## More arguments
 
 ```yaml
@@ -303,7 +263,67 @@ mean(health_exp_col, na.rm=TRUE)
 
 `@sct`
 ```{r}
-ex() %>% check_output('1260\\.379')
+ex() %>% check_output('1260\\.379',
+             missing_msg='Expecting to see the mean value, dropping NA')
+```
+
+---
+
+## A happy median
+
+```yaml
+type: NormalExercise
+key: 1b2d5f945f
+xp: 100
+```
+
+Now you know the two different ways that calculations can deal with `NA`
+values:
+
+- refuse to do the calculation and return `NA` (usually the default).
+- drop the NA values and do the calculation on the rest.
+
+As you might expect, R has a `median` function, that works in a similar way to
+the `mean` function.  Like the `mean` function, it has an `na.rm` option.
+
+`@instructions`
+
+First calculate the median of `health_exp_col` the default way, and show the result.  It should show `NA`.
+
+Then calculate the median of `health_exp_col`, setting the option to drop the
+`NA` values.
+
+`@hint`
+You should have two lines of code, starting `median(health_exp_col`, one that does not drop the `NA` values, and one that does.
+
+`@pre_exercise_code`
+```{r}
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+health_exp_col <- gender_data$health_exp_per_cap
+```
+
+`@sample_code`
+```{r}
+# First display the value R returns for the median, by default.
+# Your code will start "median(health_exp_col".
+
+# Next display the value R returns for the median, when dropping NA values.
+# Your code will start "median(health_exp_col".
+```
+
+`@solution`
+```{r}
+median(health_exp_col)
+median(health_exp_col, na.rm=TRUE)
+```
+
+`@sct`
+```{r}
+state = ex()
+check_output(state, 'NA',
+             missing_msg='Expecting to NA for the default calculation of median')
+check_output(state, '697\\.8017',
+             missing_msg='Expecting to 697.8017 for median without NA')
 ```
 
 ---
