@@ -53,9 +53,9 @@ gender_data$mat_mort_ratio
 `@sct`
 ```{r}
 state <- ex()
-check_output(state, '161\\.13803',
+check_output(state, '444\\.00',
              missing_msg='Expecting to see first value')
-check_output(state, '115\\.51988',
+check_output(state, '398\\.00',
              missing_msg='Expecting to see last value')
 ```
 
