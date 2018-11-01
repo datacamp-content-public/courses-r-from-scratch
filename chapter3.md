@@ -102,6 +102,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 # Make a variable 'health_exp_col'.
 # It should points to the 'health_exp_per_cap' column.
 
+
 # Display the contents of 'health_exp_col'
 ```
 
@@ -116,9 +117,9 @@ health_exp_col
 state <- ex()
 check_object(state, "health_exp_col") %>% check_equal()
 check_output(state, '161\\.13803',
-             missing_msg='Expecting to see first value')
+             missing_msg='Expecting to see first value of health_exp_col')
 check_output(state, '115\\.51988',
-             missing_msg='Expecting to see last value')
+             missing_msg='Expecting to see last value of health_exp_col')
 
 ```
 
