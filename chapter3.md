@@ -180,7 +180,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 ```yaml
 type: NormalExercise
 key: a6dfce900b
-xp: 20
+xp: 100
 ```
 
 We have a variable `health_exp_col` that points to the `health_exp_per_cap`
@@ -192,7 +192,7 @@ Now consider what would happen if we calculate a mean over these values.  You ca
   have NA.
 - drop all the NA values, and take the mean of the rest.
 
-Run the code to the left to 
+Run the code to the left to
 
 `@instructions`
 
