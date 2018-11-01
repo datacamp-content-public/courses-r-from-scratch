@@ -52,7 +52,7 @@ ex() %>% {
 
 ---
 
-## Insert exercise title here
+## Hist yourself
 
 ```yaml
 type: NormalExercise
@@ -60,32 +60,43 @@ key: bd38b15751
 xp: 100
 ```
 
+At the beginning of this tutorial, you did a plot of the values in the
+`health_exp_per_cap` column against the matching values in the `mat_mort_ratio`
+column.
+
+You have just done the histogram for `mat_mort_ratio`.  Now do the histogram for `health_exp_per_cap`.
 
 
 `@instructions`
+Show the histogram of the values in the `health_exp_per_cap` column of
+`gender_data`.
 
 
 `@hint`
-
+Did you call the `hist` function on the values of the `health_exp_per_cap`
+column?
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data = read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
+# Show the histogram for the 'health_exp_per_cap' column of 'gender_dat'
 
 ```
 
 `@solution`
 ```{r}
-
+hist(gender_data$health_exp_per_cap)
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% {
+  check_function(., "hist") %>% check_arg("x") %>% check_equal()
+  }
 ```
 
 ---
@@ -98,33 +109,51 @@ key: 32d8888562
 xp: 100
 ```
 
-Using a variable pointing to the column, to do the histogram (variables
-revision).
+Here is some revision on variables.
+
+Remember, all that time ago, you made a variable `health_exp_col` that pointed to the `healt_exp_per_cap` column in `gender_data`?  You did it like this:
+
+```{r}
+health_exp_col <- gender_data$health_exp_per_cap
+```
+
+Because `health_exp_col` now points to the same values as `gender_data$health_exp_per_cap`, if you do `hist(health_exp_col)`, you will get the same histogram as you would for `hist(gender_data$health_exp_per_cap)`.
 
 `@instructions`
+Make a new variable `mat_mort_col` that points to the `mat_mort_ratio` column of `gender_data`.
 
+Show a histogram of the values of `mat_mort_col`.
 
 `@hint`
-
+Do you have a variable `mat_mort_col` that points to `gender_data$mat_mort_ratio`?
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data = read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
+# Make a new variable 'mat_mort_col' that points to the 'mat_mort_ratio' colummn.
+
+
+# Do a histogram on the values of 'mat_mort_col'
+
 
 ```
 
 `@solution`
 ```{r}
-
+mat_mort_col <- gender_data$mat_mort_ratio
+hist(mat_mort_col)
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% {
+  check_object(., "mat_mort_col") %>% check_equal()
+  check_function(., "hist") %>% check_arg("x") %>% check_equal()
+  }
 ```
 
 ---
