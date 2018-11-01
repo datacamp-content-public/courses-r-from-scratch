@@ -144,8 +144,6 @@ Look at the last ten values or so. `health_exp_col`.  Most of these are numbers,
 `NA` is R's code meaning "Not available".  For our case, some countries (rows)
 had no data available for health expenditure per capita from 2012 through 2016.
 
-What are these last two countries, that do not have this data?
-
 Use the R Console to show the last 6 rows in the data frame with
 `tail(gender_data)`.  Look at the `health_exp_per_cap` column.
 
@@ -169,7 +167,7 @@ health_exp_col <- gender_data$health_exp_per_cap
 
 `@sct`
 ```{r}
-msg1 <- "Did you use 'head(gender_data)' instead of tail(gender_data)?"
+msg1 <- "Did you use 'head(gender_data)' instead of 'tail(gender_data)'?"
 msg2 <- "Yes, those are the last two countries with NA in 'health_exp_per_cap"
 msg3 <- "Check that you are looking for the countries with NA in 'health_exp_per_cap"
 ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
@@ -182,17 +180,19 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 ```yaml
 type: NormalExercise
 key: a6dfce900b
-xp: 100
+xp: 20
 ```
 
-You just made a variable `health_exp_col` that points to the
-`health_exp_per_cap` column of the `gender_data` data frame.  Then you displayed them.
+We have a variable `health_exp_col` that points to the `health_exp_per_cap`
+column of the `gender_data` data frame.  We just found out that some countries have missing data for this column - they have `NA` values.
 
-Have a look at these again, by running `health_exp_col` in the R Console.
+Now consider what would happen if we calculate a mean over these values.  You can imagine two ways of dealing with the `NA` values.
 
-Notice that the fourth value in `health_exp_col` is `NA`.
+- give up on calculating the mean because you cannot guess the values which
+  have NA.
+- drop all the NA values, and take the mean of the rest.
 
-Run `head(gender_data)` to see which row this is.
+Run the code to the left to 
 
 `@instructions`
 
