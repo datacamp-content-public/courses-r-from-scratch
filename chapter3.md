@@ -133,7 +133,7 @@ key: a6dfce900b
 xp: 100
 ```
 
-
+In which we look at the mean of the mat_mort_ratio column, and wonder why it is NA.
 
 `@instructions`
 
@@ -171,6 +171,7 @@ key: 0d8f1f12b2
 xp: 100
 ```
 
+The `na.rm` keyword argument to `mean`.
 
 
 `@instructions`
@@ -209,6 +210,7 @@ key: 08b638fb44
 xp: 100
 ```
 
+Calculating the per-capita GDP.  First elementwise, with indexing.
 
 
 `@instructions`
@@ -247,6 +249,7 @@ key: a811986c3c
 xp: 100
 ```
 
+Calculating the per-capita GDP with vectors.
 
 
 `@instructions`
