@@ -181,7 +181,6 @@ xp: 100
 
 The `na.rm` keyword argument to `mean`.
 
-
 `@instructions`
 
 
@@ -220,7 +219,6 @@ xp: 100
 
 Calculating the per-capita GDP.  First elementwise, with indexing.
 
-
 `@instructions`
 
 
@@ -258,7 +256,6 @@ xp: 100
 ```
 
 Calculating the per-capita GDP with vectors.
-
 
 `@instructions`
 

@@ -90,7 +90,6 @@ xp: 100
 
 Plotting one column against another.
 
-
 `@instructions`
 
 
