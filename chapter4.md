@@ -230,7 +230,6 @@ Here is an exercise that is a little more difficult, to stretch your new skills.
 You are going to plot the total health expenditure for each country against the maternal mortality ratio.  You first have to calculate the total health expenditure, and the plot it against the `mat_mort_ratio` column of the data frame.
 
 `@instructions`
-
 Make a new variable `total_health_exp` with the total dollar health expenditure
 for every country.  The variable should be the multiplication of the values in
 the `health_exp_per_cap` column by the corresponding values in the `population`
