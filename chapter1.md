@@ -82,6 +82,19 @@ ex() %>% check_object("gender_data") %>% check_equal()
 
 ---
 
+## Insert exercise title here
+
+```yaml
+type: VideoExercise
+key: 500a13214d
+xp: 50
+```
+
+`@projector_key`
+e73c5391d5e1b857455daae51a8c3477
+
+---
+
 ## Starting with variables
 
 ```yaml
