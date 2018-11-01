@@ -215,7 +215,7 @@ ex() %>% {
 
 ---
 
-## Scatter plots with variables
+## You scatter
 
 ```yaml
 type: NormalExercise
@@ -223,30 +223,53 @@ key: f1fad864ed
 xp: 100
 ```
 
-Calculate per-capita GDP, plot against a column in the data frame (revision).
+You are well on your way to mastery.
+
+Here is an exercise that is a little more difficult, to stretch your new skills.
+
+You are going to plot the total health expenditure for each country against the maternal mortality ratio.  You first have to calculate the total health expenditure, and the plot it against the `mat_mort_ratio` column of the data frame.
 
 `@instructions`
 
+Make a new variable `total_health_exp` with the total dollar health expenditure
+for every country.  The variable should be the multiplication of the values in
+the `health_exp_per_cap` column by the corresponding values in the `population`
+column.
+
+Plot `total_health_exp` on the x axis against the values from the `mat_mort_ratio` column.
 
 `@hint`
-
+Did you calculate `total_health_exp` with `gender_data$health_exp_per_cap * gender_data$population`?
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
+# Make a new variable 'total_health_exp' that contains
+# the 'health_exp_per_cap' column times the 'population' column.
+
+
+# Plot 'total_health_exp' on the x axis, 'mat_mort_ratio' column on y axis
+
 
 ```
 
 `@solution`
 ```{r}
-
+total_health_exp <- gender_data$health_exp_per_cap * gender_data$population
+plot(total_health_exp, gender_data$mat_mort_ratio)
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% {
+  check_object(., "total_health_exp") %>% check_equal()
+  check_function(., "plot") %>% {
+    check_arg(., "x") %>% check_equal()
+    check_arg(., "y") %>% check_equal()
+  }
+}
 ```
