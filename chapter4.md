@@ -175,7 +175,7 @@ hist(mat_mort_col)
 ```
 
 We are now going to use the `plot` function.  That usually takes two arguments
-- and therefore, has two variables between the parentheses.  The two arguments
+\- and therefore, has two variables between the parentheses.  The two arguments
 are the values for the x axis and the values for the y axis.
 
 `@instructions`
@@ -195,7 +195,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 `@sample_code`
 ```{r}
 # Plot 'health_exp_per_cap' (x axis) against 'mat_mort_ratio' (y axis).
-
+plot(gender_data$health_exp_per_cap, gender_data$mat_mort_ratio)
 ```
 
 `@solution`
