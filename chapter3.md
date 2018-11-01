@@ -409,8 +409,8 @@ the other, all in one go.
 Run the code in the script window, to show the result of dividing the `gdp` column by the `population` column.  Scroll up to check that the first value is the same as the value you saw in the previous exercise.  Click "Submit" when you have finished.
 
 `@hint`
-If you have deleted the code, copy paste `mean(health_exp_col)` into the script
-window.
+If you have deleted the code, copy paste `gender_data$gdp
+/ gender_data$population` into the script window.
 
 `@pre_exercise_code`
 ```{r}
