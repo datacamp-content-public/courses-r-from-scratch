@@ -186,19 +186,19 @@ xp: 50
 We have a variable `health_exp_col` that points to the `health_exp_per_cap`
 column of the `gender_data` data frame.  We just found out that some countries have missing data for this column - they have `NA` values.
 
-Now consider what would happen if we calculate a mean over these values.  You can imagine two ways of dealing with the `NA` values.
+Now consider what would happen if we calculate a mean over these values.  Some things R could do are:
 
 - refuse to do a calculation with `NA` values and return `NA`.
 - refuse to do a calculation with `NA` values and show an error.
 - drop all the NA values, and take the mean of the rest.
 
 Run `mean(health_exp_col)` in the R Console and look at the result.  What does
-R do, by default?
+R do?
 
 `@possible_answers`
-- refuses to do a calculation with `NA` values and return `NA`.
-- refuses to do a calculation with `NA` values and show an error.
-- drops all the NA values, and take the mean of the rest.
+- refuses to do a calculation with `NA` values and returns `NA`.
+- refuses to do a calculation with `NA` values and shows an error.
+- drops all the NA values, and takes the mean of the rest.
 
 `@hint`
 Have a look at the console result.  Was there an error?  Is there a number (the
@@ -225,35 +225,47 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 ```yaml
 type: NormalExercise
 key: 0d8f1f12b2
-xp: 100
+xp: 20
 ```
 
-The `na.rm` keyword argument to `mean`.
+We found that, by default, R refuses to calculate a mean, when there are `NA`
+values.
+
+We might prefer R to drop the `NA` values, and calculate the mean on the rest.
+Of course we have to be very careful interpreting the result - it will not be representative of all countries.
+
+Almost all functions in R allow us to give extra _options_.  We do this using
+something called *keyword arguments*.  These have the form `option_name=value`.
+
+In our case, we want to use the `na.rm` option.
 
 `@instructions`
-
+The code to use the `na.rm` option is in the script window.  Run the code to see the result, and then Submit to continue.
 
 `@hint`
-
+If you have deleted the code, copy paste `mean(health_exp_col)` into the script
+window.
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+health_exp_col <- gender_data$health_exp_per_cap
 ```
 
 `@sample_code`
 ```{r}
-
+# Calculate the mean, removing the NA values
+mean(health_exp_col, na.rm=TRUE)
 ```
 
 `@solution`
 ```{r}
-
+mean(health_exp_col, na.rm=TRUE)
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% check_output('1260\\.379')
 ```
 
 ---
