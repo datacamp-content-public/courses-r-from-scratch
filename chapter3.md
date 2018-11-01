@@ -69,31 +69,56 @@ key: 6bdb5ddcb1
 xp: 100
 ```
 
+This is a little revision and expansion on variables.
 
+In the exercise above, you displayed all the values for the `mat_mort_ratio` column with:
+
+```
+gender_data$mat_mort_ratio
+```
+
+Instead of printing out the values in the column, we may want to give the
+column values their own name.  We do this in exactly the same way as we do it
+when setting other variables.  For example, here we give the label
+`mat_mort_vals` to the `mat_mort_ratio` column.
+
+```
+mat_mort_vals <- gender_data$mat_mort_ratio
+```
 
 `@instructions`
-
+Make a new variable `health_exp_col` that points to the `health_exp_per_cap` column in the `gender_data` data frame.  Display the contents of your new `health_exp_col` variable.
 
 `@hint`
-
+You should start with a line starting `health_exp_col <- gender_data$`.
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
+# Make a variable 'health_exp_col'.
+# It should points to the 'health_exp_per_cap' column.
 
+# Display the contents of 'health_exp_col'
 ```
 
 `@solution`
 ```{r}
-
+health_exp_col <- gender_data$health_exp_per_cap
+health_exp_col
 ```
 
 `@sct`
 ```{r}
+state <- ex()
+check_object(state, "health_exp_col") %>% check_equal()
+check_output(state, '161\\.13803',
+             missing_msg='Expecting to see first value')
+check_output(state, '115\\.51988',
+             missing_msg='Expecting to see last value')
 
 ```
 
