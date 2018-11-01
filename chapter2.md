@@ -335,7 +335,6 @@ the number `9.888e+06` means $9.888 * 10^6$ - i.e `9888000`.
 - the median is less than the mean for all numerical variables except
   `prim_ed_girls`.
 
-
 `@hint`
 `9.888e+06` (9888000) is less than `2.934e+08` (293400000).
 
