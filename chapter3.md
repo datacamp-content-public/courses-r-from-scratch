@@ -133,7 +133,14 @@ key: a6dfce900b
 xp: 100
 ```
 
-In which we look at the mean of the mat_mort_ratio column, and wonder why it is NA.
+You just made a variable `health_exp_col` that points to the
+`health_exp_per_cap` column of the `gender_data` data frame.  Then you displayed them.
+
+Have a look at these again, by running `health_exp_col` in the R Console.
+
+Notice that the fourth value in `health_exp_col` is `NA`.
+
+Run `head(gender_data)` to see which row this is.
 
 `@instructions`
 
@@ -143,7 +150,8 @@ In which we look at the mean of the mat_mort_ratio column, and wonder why it is 
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+health_exp_col <- gender_data$health_exp_per_cap
 ```
 
 `@sample_code`
