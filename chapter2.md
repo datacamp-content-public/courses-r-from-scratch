@@ -321,22 +321,35 @@ key: 561d6b2cae
 xp: 50
 ```
 
+If you can't remember the output of `summary`, try executing
+`summary(gender_data)` in the R Console. `gender_data` is already loaded.
 
+The output prints some very large numbers in scientific notation.  For example,
+the number `9.888e+06` means $9.888 * 10^6$ - i.e `9888000`.
 
 `@possible_answers`
+- the median is less than the mean for all numerical variables
+- the median is greater than the mean for all numerical variables
+- the median is less than the mean for all numerical variables except
+  `mat_mort_ratio`.
+- the median is less than the mean for all numerical variables except
+  `prim_ed_girls`.
 
 
 `@hint`
-
+`9.888e+06` (9888000) is less than `2.934e+08` (293400000).
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sct`
 ```{r}
-
+msg1 <- "Have a look at the median and mean for 'prim_ed_girls'"
+msg2 <- "Have a look at the median and mean for 'fert_rate'"
+msg3 <- "Yes, the median, mean for 'prim_ed_girls' are 48.52, 48.24"
+ex() %>% check_mc(4, feedback_msgs = c(msg1, msg2, msg1, msg3))
 ```
 
 ---
