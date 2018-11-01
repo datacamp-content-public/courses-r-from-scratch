@@ -347,8 +347,9 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```{r}
 msg1 <- "Have a look at the median and mean for 'prim_ed_girls'"
 msg2 <- "Have a look at the median and mean for 'fert_rate'"
-msg3 <- "Yes, the median, mean for 'prim_ed_girls' are 48.52, 48.24"
-ex() %>% check_mc(4, feedback_msgs = c(msg1, msg2, msg1, msg3))
+msg3 <- "Have a closer look at the median and mean for 'mat_mort_ratio'"
+msg4 <- "Yes, the median, mean for 'prim_ed_girls' are 48.52, 48.24"
+ex() %>% check_mc(4, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
 
 ---
@@ -361,30 +362,49 @@ key: 316cdc7619
 xp: 100
 ```
 
+Another common way to get a quick idea of the data frame, is to look at a small sample of the rows.
 
+You have already seen the `head` function.  By default, `head` will show the
+first six rows in a data frame (and all the columns).
+
+You have can also use the `tail` function.  By default, that will show the last
+six rows in a data frame (and all the columns).
 
 `@instructions`
+Use the `head`  function with the `gender_data` data frame, to show the first six rows of the data frame.
 
+Then show the _last_ six rows with `tail`.
+
+The `gender_data` data frame is already loaded.
 
 `@hint`
-
+Did you use both `head` and `tail` on `gender_data`?
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
+# Display the first six rows from the gender_data data frame.
 
+# Now display the last six rows from the data frame.
 ```
 
 `@solution`
 ```{r}
-
+head(gender_data)
+tail(gender_data)
 ```
 
 `@sct`
 ```{r}
-
+state <- ex()
+check_output(state,
+  '1    Afghanistan   4.95450  19961015094[[:space:]]+     161.1380',
+  missing_msg='Did you display the value for "head(gender_data)"?')
+check_output(state,
+  '258 Virgin Islands (U.S.)  1.760000 3.812000e+09',
+  missing_msg='Did you display the value for "tail(gender_data)"?')
 ```
