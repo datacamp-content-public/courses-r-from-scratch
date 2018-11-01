@@ -12,6 +12,7 @@ xp: 50
 video_link: //player.vimeo.com/video/298272711
 ```
 
+
 ---
 
 ## A first analysis in R
@@ -90,6 +91,7 @@ xp: 50
 video_link: //player.vimeo.com/video/298409140
 ```
 
+
 ---
 
 ## Variable interlude
@@ -99,6 +101,7 @@ type: NormalExercise
 key: 3101c3d7a1
 xp: 100
 ```
+
 Now you know about variables, go over to
 <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1>
 to learn more about:
