@@ -164,32 +164,54 @@ key: 002cef1965
 xp: 100
 ```
 
-Plotting one column against another.
+Now we are ready to go back to the plot we did at the start of this tutorial.
+
+So far, the functions we have used, have had one argument - and so one variable
+between the parentheses.  For example:
+
+```{r}
+head(gender_data)
+hist(mat_mort_col)
+```
+
+We are now going to use the `plot` function.  That usually takes two arguments
+- and therefore, has two variables between the parentheses.  The two arguments
+are the values for the x axis and the values for the y axis.
 
 `@instructions`
+The script windows contains the code to plot the `health_exp_per_cap` column of
+`gender_data` against the `mat_mort_ratio` column of `gender_data`. Run the
+code to see the result, and then click Submit to continue.j
 
 
 `@hint`
-
+If you have deleted the code, copy paste `plot(gender_data$health_exp_per_cap,
+gender_data$mat_mort_ratio)`.
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
+# Plot 'health_exp_per_cap' (x axis) against 'mat_mort_ratio' (y axis).
 
 ```
 
 `@solution`
 ```{r}
-
+plot(gender_data$health_exp_per_cap, gender_data$mat_mort_ratio)
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% {
+  check_function(., "plot") %>% {
+    check_arg(., "x") %>% check_equal()
+    check_arg(., "y") %>% check_equal()
+  }
+}
 ```
 
 ---

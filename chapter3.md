@@ -240,7 +240,8 @@ something called *keyword arguments*.  These have the form `option_name=value`.
 In our case, we want to use the `na.rm` option.
 
 `@instructions`
-The code to use the `na.rm` option is in the script window.  Run the code to see the result, and then Submit to continue.
+The code to use the `na.rm` option is in the script window.  Run the code to
+see the result, and then Submit to continue.
 
 `@hint`
 If you have deleted the code, copy paste `mean(health_exp_col)` into the script
