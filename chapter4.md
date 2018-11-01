@@ -183,7 +183,6 @@ The script windows contains the code to plot the `health_exp_per_cap` column of
 `gender_data` against the `mat_mort_ratio` column of `gender_data`. Run the
 code to see the result, and then click Submit to continue.j
 
-
 `@hint`
 If you have deleted the code, copy paste `plot(gender_data$health_exp_per_cap,
 gender_data$mat_mort_ratio)`.
