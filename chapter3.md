@@ -175,7 +175,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 
 ---
 
-## Insert exercise title here
+## What's a mean to do?
 
 ```yaml
 type: MultipleChoiceExercise
@@ -183,22 +183,39 @@ key: 34aa5cb6e7
 xp: 50
 ```
 
+We have a variable `health_exp_col` that points to the `health_exp_per_cap`
+column of the `gender_data` data frame.  We just found out that some countries have missing data for this column - they have `NA` values.
 
+Now consider what would happen if we calculate a mean over these values.  You can imagine two ways of dealing with the `NA` values.
+
+- refuse to do a calculation with `NA` values and return `NA`.
+- refuse to do a calculation with `NA` values and show an error.
+- drop all the NA values, and take the mean of the rest.
+
+Run `mean(health_exp_col)` in the R Console and look at the result.  What does
+R do, by default?
 
 `@possible_answers`
-
+- refuses to do a calculation with `NA` values and return `NA`.
+- refuses to do a calculation with `NA` values and show an error.
+- drops all the NA values, and take the mean of the rest.
 
 `@hint`
-
+Have a look at the console result.  Was there an error?  Is there a number (the
+mean of the not-missing values)?  Or is there an `NA`?
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
+health_exp_col <- gender_data$health_exp_per_cap
 ```
 
 `@sct`
 ```{r}
-
+msg1 <- "Yes - the mean returns an NA, by default, if any value is NA"
+msg2 <- "When R shows an error, it will give an error message"
+msg3 <- "If that were true, you should see the mean of the not-NA values in the console"
+ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 ```
 
 ---
