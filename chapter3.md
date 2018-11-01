@@ -218,6 +218,8 @@ msg3 <- "If that were true, you should see the mean of the not-NA values in the 
 ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 ```
 
+---
+
 ## More arguments
 
 ```yaml
