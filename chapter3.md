@@ -481,5 +481,5 @@ gender_data$health_exp_per_cap * gender_data$population
 ```{r}
 ex() %>% check_output(
   '5\\.271766e\\+09[[:space:]]+1\\.658458e\\+09[[:space:]]+3\\.404615e\\+10',
-  missing_msg='Expecting values to start with 5.271766e+09 1.658458e+09 3.404615e+10')
+  missing_msg='Expecting values to start with 5.271766e+09 1.658458e+09 3.404615e+10 - did you multiply the columns?')
 ```
