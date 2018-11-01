@@ -44,7 +44,10 @@ hist(gender_data$mat_mort_ratio)
 
 `@sct`
 ```{r}
-ex() %>% check_function("hist") %>% check_arg("gender_data") %>% check_equal()
+# From :http://datacamp.github.io/testwhat/articles/glossary.html#check-ggplot
+ex() %>% {
+  check_function(., "hist") %>% check_arg("gender_data") %>% check_equal()
+  }
 ```
 
 ---
