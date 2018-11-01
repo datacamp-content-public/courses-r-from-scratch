@@ -1,6 +1,9 @@
 ---
 title: 'The R way'
-description: 'R is a language that allows you to define your data analysis in words.   It is a completely different to something like Excel, where you do much of your analysis by clicking on the graphical user interface. '
+description: 'R is a language that allows you to define your data analysis in
+words.  This may be an unfamiliar way of working, but experience shows that
+this approach quickly leads to a large increase in power and efficiency of
+data analysis.'
 ---
 
 ## The R difference

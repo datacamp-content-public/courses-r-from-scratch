@@ -1,6 +1,6 @@
 ---
 title: 'Data frames and functions'
-description: 'Data frames contain columns of data.  We use functions to examine data frames.'
+description: 'We use functions to examine data frames.'
 ---
 
 ## Functions and the data frame
