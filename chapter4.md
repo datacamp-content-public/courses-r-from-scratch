@@ -11,7 +11,7 @@ key: 37d36434b1
 xp: 100
 ```
 
-
+Histogram of a column from the data frame.
 
 `@instructions`
 
@@ -49,7 +49,8 @@ key: 32d8888562
 xp: 100
 ```
 
-
+Using a variable pointing to the column, to do the histogram (variables
+revision).
 
 `@instructions`
 
@@ -87,6 +88,7 @@ key: 002cef1965
 xp: 100
 ```
 
+Plotting one column against another.
 
 
 `@instructions`
@@ -125,7 +127,7 @@ key: f1fad864ed
 xp: 100
 ```
 
-
+Calculate per-capita GDP, plot against a column in the data frame (revision).
 
 `@instructions`
 
