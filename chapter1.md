@@ -12,7 +12,6 @@ xp: 50
 video_link: //player.vimeo.com/video/298272711
 ```
 
-
 ---
 
 ## A first analysis in R
@@ -82,48 +81,27 @@ ex() %>% check_object("gender_data") %>% check_equal()
 
 ---
 
-## Insert exercise title here
+## Getting formal with variables
 
 ```yaml
 type: VideoExercise
 key: 500a13214d
 xp: 50
+video_link: //player.vimeo.com/video/298409140
 ```
-
-`@projector_key`
-e73c5391d5e1b857455daae51a8c3477
 
 ---
 
-## Starting with variables
+## Variable interlude
 
 ```yaml
 type: NormalExercise
 key: 3101c3d7a1
 xp: 100
 ```
-
-Now you have run your first analysis in R.
-
-Remember the first line in the code for the last exercise:
-
-```
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
-```
-
-The line reads the data from <http://bit.ly/gender-stats-data> into memory, and gives the data a label, `gender_data`.
-
-There are two parts to this line, on either side of the characters that look like a left-facing arrow: `<-`.
-
-The part to the left of the `<-` is called the Left Hand Side (LHS).  This is the label we are going to use for our data.  In our case this is `gender_data`.
-
-The part to right is called the Right Hand Side (RHS).  This is something that creates our data in memory. In our case this is `read.csv('http://bit.ly/gender-stats-data')`.
-
-The label `gender_data` is also called a *variable*.
-
-Variables are very important in R, and other programming languages.  Variables are names that make it much easier for us to refer to data, and to store data from previous steps.
-
-Now go over to <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1> to learn more about:
+Now you know about variables, go over to
+<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1>
+to learn more about:
 
 * the DataCamp interface (that you are using now) and
 * variables in R.
