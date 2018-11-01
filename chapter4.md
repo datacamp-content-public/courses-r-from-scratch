@@ -8,7 +8,7 @@ description: 'R has very powerful tools for looking at data with plots.  We expl
 ```yaml
 type: NormalExercise
 key: 37d36434b1
-xp: 20
+xp: 100
 ```
 
 R has a very powerful set of functions for plotting data.
