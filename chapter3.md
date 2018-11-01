@@ -359,7 +359,7 @@ want.  Try it in the R console.
 Divide the first value of the `gdp` column by the first value of the `population` column, to give the GDP per person, for the first row.
 
 `@hint`
-Are you using `gender_data$gdp[1]` and `gender_data$population[1]`?
+Are you using `gender_data$gdp[1]` divided by `gender_data$population[1]`?
 
 `@pre_exercise_code`
 ```{r}
@@ -368,7 +368,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 
 `@sample_code`
 ```{r}
-# Show the first value of gdp divided by the first value in poplulation
+# Show the first value of gdp divided by the first value in population
 
 ```
 
@@ -393,30 +393,43 @@ key: a811986c3c
 xp: 100
 ```
 
-Calculating the per-capita GDP with vectors.
+You have just divided the first value of the `gdp` column by the first value in the `population` column.   How would we do that for all the values in the column?  It would be very boring to do:
+
+```
+value1 <- gender_data$gdp[1] / gender_data$population[1]
+value2 <- gender_data$gdp[2] / gender_data$population[2]
+# and so on
+```
+
+R has thought of that.  If you divide one (whole) column by another (whole)
+column, then R divides each value in one column by the corresponding value in
+the other, all in one go.
 
 `@instructions`
-
+Run the code in the script window, to show the result of dividing the `gdp` column by the `population` column.  Scroll up to check that the first value is the same as the value you saw in the previous exercise.  Click "Submit" when you have finished.
 
 `@hint`
-
+If you have deleted the code, copy paste `mean(health_exp_col)` into the script
+window.
 
 `@pre_exercise_code`
 ```{r}
-
+gender_data <- read.csv('http://bit.ly/gender-stats-data')
 ```
 
 `@sample_code`
 ```{r}
-
+# Divide the gdp column by the population column, for all rows
+gender_data$gdp / gender_data$population
 ```
 
 `@solution`
 ```{r}
-
+gender_data$gdp / gender_data$population
 ```
 
 `@sct`
 ```{r}
-
+ex() %>% check_output('610\\.1331[[:space:]]+4268\\.1406[[:space:]]+4878\\.2404',
+             missing_msg='Expecting values to start with 610.1331  4268.1406 4878.2404')
 ```
