@@ -36,7 +36,7 @@ on gender and inequality:
 The subset is a selection of variables for every country, for each variable,
 we have taken the mean values from 2012 through 2016.
 
-Here is the data files:
+Here are the data files:
 
 * [variable description](http://bit.ly/gender-stats-variables)
 * [data file](http://bit.ly/gender-stats-data).
