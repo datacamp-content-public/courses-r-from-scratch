@@ -180,7 +180,9 @@ be difficult to remember exactly what each of these functions do.
 
 To get help for a function, go to the R Console window, and type `?` followed
 by the function name.  For example, try typing `?str` and pressing Enter.  You
-should see the help for the `str` function appear.
+should see the help for the `str` function appear in a new tab, in the window to the right.
+
+Click on the `SCRIPT.R` tab to get back the tab where you enter your code.
 
 As you will see from the help, `str` shows the "structure" of an R "object" - such as a data frame.
 
@@ -210,6 +212,9 @@ str(gender_data)
 
 `@sct`
 ```{r}
+ex() %>% check_function("str") %>% {
+  check_arg(., "x") %>% check_equal()
+}
 state <- ex()
 for (name in names(gender_data)) {
   check_output(state, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
