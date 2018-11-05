@@ -67,7 +67,8 @@ When you've had a look, click "Submit Answer" to carry on to the next section.
 gender_data = read.csv('http://bit.ly/gender-stats-data')
 # Show the first 6 rows
 head(gender_data)
-# Plot Health Expenditure Per Capita (x axis) against the Maternal Mortality ratio (y axis)
+# Plot Health Expenditure Per Capita (x axis) against the
+# Maternal Mortality Ratio (y axis)
 plot(gender_data$health_exp_per_cap, gender_data$mat_mort_ratio)
 ```
 
@@ -141,7 +142,9 @@ Go back through <https://campus.datacamp.com/courses/free-introduction-to-r/chap
 ```{r}
 # Create a variable called "my_pomegranates" and set it equal to 112.
 
+
 # Create another variable called "my_kiwis" and set it equal to 92.
+
 
 # Create a third variable called "my_exotic_fruits" and set it equal to the sum of `my_pomegranates` and "my_kiwis"
 
@@ -194,7 +197,7 @@ You saw examples of numeric variables, and character variables.
 What type of thing does `gender_data` point to?
 
 `@instructions`
-Use `class` to find out what type of thing `gender_data` points to.  Display the type.
+Use `class` to show the type of thing `gender_data` points to.
 
 `@hint`
 To show what type of thing a variable `my_variable` points to, use `class(my_variable)`.
