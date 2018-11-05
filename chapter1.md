@@ -3,17 +3,16 @@ title: 'The R way'
 description: 'R is a language that allows you to define your data analysis in words.  This may be an unfamiliar way of working, but experience shows that this approach quickly leads to a large increase in power and efficiency.'
 ---
 
-## The R difference
+## R is not Excel
 
 ```yaml
 type: VideoExercise
-key: 8961e8aa9e
-lang: r
+key: 3d51e5b8dd
 xp: 50
-skills: 1
-video_link: //player.vimeo.com/video/298272711
 ```
 
+`@projector_key`
+5f71620cfafcc07e53e3b1d91199d391
 
 ---
 
@@ -81,20 +80,6 @@ gender_data = read.csv('http://bit.ly/gender-stats-data')
 success_msg("Nicely done.")
 ex() %>% check_object("gender_data") %>% check_equal()
 ```
-
----
-
-## Getting formal with variables
-
-```yaml
-type: VideoExercise
-key: 500a13214d
-lang: r
-xp: 50
-skills: 1
-video_link: //player.vimeo.com/video/298409140
-```
-
 
 ---
 
@@ -223,3 +208,16 @@ class(gender_data)
 ```{r}
 ex() %>% check_output("data\\.frame", missing_msg = "Did you display the class() of the gender_data?")
 ```
+
+---
+
+## Introduction to variables
+
+```yaml
+type: VideoExercise
+key: 2b754578ad
+xp: 50
+```
+
+`@projector_key`
+1c9b727bc0da50612122d1f9859d90ff
