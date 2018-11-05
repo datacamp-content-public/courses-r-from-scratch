@@ -123,7 +123,7 @@ xp: 100
 
 It shows us the names of the columns.
 
-For example, say we have a data frame variable `df`.  We can show the names of the columns with:
+For example, say we have a variable `df` that points to a data frame.  We can show the names of the columns with:
 
 ```
 names(df)
@@ -154,6 +154,9 @@ names(gender_data)
 
 `@sct`
 ```{r}
+ex() %>% check_function("names") %>% {
+  check_arg(., "x") %>% check_equal()
+}
 state <- ex()
 for (name in names(gender_data)) {
   check_output(state, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
