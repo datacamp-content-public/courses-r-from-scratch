@@ -212,10 +212,8 @@ str(gender_data)
 
 `@sct`
 ```{r}
-ex() %>% check_function("str") %>% {
-  check_arg(., "x") %>% check_equal()
-}
 state <- ex()
+check_function(state, "str") %>% check_arg("x") %>% check_equal()
 for (name in names(gender_data)) {
   check_output(state, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
 }
