@@ -145,6 +145,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 `@sample_code`
 ```{r}
 # Display the names from the gender_data data frame
+
 ```
 
 `@solution`
@@ -203,6 +204,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 `@sample_code`
 ```{r}
 # Display the structure of the gender_data data frame
+
 ```
 
 `@solution`
@@ -298,6 +300,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 `@sample_code`
 ```{r}
 # Display summary statistics from the gender_data data frame
+
 ```
 
 `@solution`
@@ -308,6 +311,7 @@ summary(gender_data)
 `@sct`
 ```{r}
 state <- ex()
+check_function(state, "summary") %>% check_arg("object") %>% check_equal()
 for (name in names(gender_data)) {
   check_output(state, name, missing_msg=paste('Expecting "', name, '" in ouput', sep=''))
 }
@@ -397,6 +401,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 
 
 # Now display the last six rows from the data frame.
+
 ```
 
 `@solution`
@@ -408,9 +413,11 @@ tail(gender_data)
 `@sct`
 ```{r}
 state <- ex()
+check_function(state, "head") %>% check_arg("x") %>% check_equal()
 check_output(state,
   '1    Afghanistan   4\\.95450  19961015094[[:space:]]+     161\\.1380',
   missing_msg='Did you display the value for "head(gender_data)"?')
+check_function(state, "tail") %>% check_arg("x") %>% check_equal()
 check_output(state,
   '258 Virgin Islands \\(U\\.S\\.\\)  1\\.760000 3\\.812000e\\+09',
   missing_msg='Did you display the value for "tail(gender_data)"?')

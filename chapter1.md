@@ -143,6 +143,7 @@ Go back through <https://campus.datacamp.com/courses/free-introduction-to-r/chap
 # Create another variable called "my_kiwis" and set it equal to 92.
 
 # Create a third variable called "my_exotic_fruits" and set it equal to the sum of `my_pomegranates` and "my_kiwis"
+
 ```
 
 `@solution`
@@ -208,6 +209,7 @@ To show what type of thing a variable `my_variable` points to, use `class(my_var
 gender_data <- read.csv('http://bit.ly/gender-stats-data')
 
 # Here, write the code to display what type of thing "gender_data" is pointing to.
+
 ```
 
 `@solution`

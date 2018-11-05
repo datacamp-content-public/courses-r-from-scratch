@@ -104,6 +104,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 
 
 # Display the contents of 'health_exp_col'
+
 ```
 
 `@solution`
