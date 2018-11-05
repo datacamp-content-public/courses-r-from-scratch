@@ -13,9 +13,6 @@ key: 8961e8aa9e
 xp: 50
 video_link: //player.vimeo.com/video/298272711
 ```
-*** =projector_key
-d0c43735f4292f525eac2b0ed0ddec67
-
 
 ---
 
@@ -94,9 +91,6 @@ key: 500a13214d
 xp: 50
 video_link: //player.vimeo.com/video/298409140
 ```
-*** =projector_key
-270562553708b44be04ef630a22a88ff
-
 
 ---
 
