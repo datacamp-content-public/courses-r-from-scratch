@@ -84,6 +84,20 @@ ex() %>% check_object("gender_data") %>% check_equal()
 
 ---
 
+## Introduction to variables
+
+```yaml
+type: VideoExercise
+key: 2b754578ad
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/298409140
+```
+
+
+---
+
 ## Variable interlude
 
 ```yaml
@@ -208,17 +222,4 @@ class(gender_data)
 `@sct`
 ```{r}
 ex() %>% check_output("data\\.frame", missing_msg = "Did you display the class() of the gender_data?")
-```
-
----
-
-## Introduction to variables
-
-```yaml
-type: VideoExercise
-key: 2b754578ad
-lang: r
-xp: 50
-skills: 1
-video_link: //player.vimeo.com/video/298409140
 ```
