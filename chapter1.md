@@ -8,7 +8,6 @@ description: 'R is a language that allows you to define your data analysis in wo
 ```yaml
 type: VideoExercise
 key: 3d51e5b8dd
-xp: 50
 lang: r
 xp: 50
 skills: 1
