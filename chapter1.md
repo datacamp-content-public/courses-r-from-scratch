@@ -10,6 +10,7 @@ this approach quickly leads to a large increase in power and efficiency.'
 ```yaml
 type: VideoExercise
 key: 8961e8aa9e
+lang: r
 xp: 50
 skills: 1
 video_link: //player.vimeo.com/video/298272711
@@ -90,9 +91,10 @@ ex() %>% check_object("gender_data") %>% check_equal()
 ```yaml
 type: VideoExercise
 key: 500a13214d
+lang: r
 xp: 50
-video_link: //player.vimeo.com/video/298409140
 skills: 1
+video_link: //player.vimeo.com/video/298409140
 ```
 
 
