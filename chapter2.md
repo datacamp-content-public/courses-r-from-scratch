@@ -179,13 +179,16 @@ Another way of getting a quick view of the data frame is to use the `str` functi
 We have now seen several functions, and we will see several more.  It will soon
 be difficult to remember exactly what each of these functions do.
 
-To get help for a function, go to the R Console window, and type `?` followed
-by the function name.  For example, try typing `?str` and pressing Enter.  You
-should see the help for the `str` function appear in a new tab, in the window to the right.
+To get help for a function, go to the R Console window, and type `?`
+followed by the function name.  For example, try typing `?str` and
+pressing Enter.  You should see the help for the `str` function appear
+in a new tab, in the window to the right.
 
-Click on the `SCRIPT.R` tab to get back the tab where you enter your code.
+As you will see from the help, `str` shows the "structure" of an R
+"object" - such as a data frame.
 
-As you will see from the help, `str` shows the "structure" of an R "object" - such as a data frame.
+Click on the `SCRIPT.R` tab to get back the tab where you enter your
+code.
 
 `@instructions`
 Use the `str` function with the `gender_data` data frame as an argument, to
@@ -272,8 +275,8 @@ key: 6d072576e3
 xp: 100
 ```
 
-Functions like `dim`, `names` and `str` show us the layout of the data, but we
-often want more information on the values in the columns.
+Functions like `dim`, `names` and `str` show us the layout of the
+data, but we often want more information on the values in the columns.
 
 `summary` is a powerful function that generates descriptive statistics for the
 data in each column.
@@ -283,8 +286,8 @@ Try `?summary` in the R Console for more information.
 For the numerical columns, you will see minimum, maximum, median, mean, and various other useful descriptive statistics.
 
 `@instructions`
-Use the `summary` function with the `gender_data` data frame as an argument, to
-show descriptive statistics for each column.
+Use the `summary` function with the `gender_data` data frame as an
+argument, to show descriptive statistics for each column.
 
 The `gender_data` data frame is already loaded.
 
@@ -333,6 +336,11 @@ xp: 50
 
 If you can't remember the output of `summary`, try executing
 `summary(gender_data)` in the R Console. `gender_data` is already loaded.
+
+Each column in the output has the summary statistics for one
+variable.
+
+The first column is `country` - which is not a numerical variable.  The summary statistics for that variable are not very interesting.
 
 The output prints some very large numbers in scientific notation.  For example,
 the number `9.888e+06` means $9.888 * 10^6$ - i.e `9888000`.

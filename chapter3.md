@@ -71,16 +71,17 @@ xp: 100
 
 This is a little revision and expansion on variables.
 
-In the exercise above, you displayed all the values for the `mat_mort_ratio` column with:
+In the exercise you have just done, you displayed all the values for
+the `mat_mort_ratio` column with:
 
 ```
 gender_data$mat_mort_ratio
 ```
 
-Instead of printing out the values in the column, we may want to give the
-column values their own name.  We do this in exactly the same way as we do it
-when setting other variables.  For example, here we give the label
-`mat_mort_vals` to the `mat_mort_ratio` column.
+Instead of printing out the values in the column, we may want to point
+to these values with a variable name. We do this in exactly the same
+way as we do when setting other variables.  For example, here we give
+the name `mat_mort_vals` to the `mat_mort_ratio` column.
 
 ```
 mat_mort_vals <- gender_data$mat_mort_ratio
@@ -136,17 +137,20 @@ xp: 50
 
 You just made a variable `health_exp_col` that points to the
 `health_exp_per_cap` column of the `gender_data` data frame.  Then you
-displayed them.
+displayed the values.
 
-Have a look at these again, by running `health_exp_col` in the R Console.
+Have a look at these again, by typing `health_exp_col` and pressing
+Enter, in the R Console.
 
-Look at the last ten values or so. `health_exp_col`.  Most of these are numbers, but a couple are `NA`.
+Look at the last ten values or so of `health_exp_col`.  Most of these
+are numbers, but a couple are `NA`.
 
-`NA` is R's code meaning "Not available".  For our case, some countries (rows)
-had no data available for health expenditure per capita from 2012 through 2016.
+`NA` is a value in R that means "Not available".  For our case, some
+countries (rows) had no data available for health expenditure per
+capita between 2012 and 2016.
 
-Use the R Console to show the last 6 rows in the data frame with
-`tail(gender_data)`.  Look at the `health_exp_per_cap` column.
+Now use the R Console again to show the last 6 rows in the data frame
+with `tail(gender_data)`.  Look at the `health_exp_per_cap` column.
 
 The last two countries with `NA` for `health_exp_per_cap` are:
 
@@ -483,5 +487,5 @@ gender_data$health_exp_per_cap * gender_data$population
 ```{r}
 ex() %>% check_output(
   '5\\.271766e\\+09[[:space:]]+1\\.658458e\\+09[[:space:]]+3\\.404615e\\+10',
-  missing_msg='Expecting values to start with 5.271766e+09 1.658458e+09 3.404615e+10 - did you multiply the columns?')
+  missing_msg='Expecting values to start with 5.271766e+09 1.658458e+09 3.404615e+10 - did you multiply the right columns?')
 ```

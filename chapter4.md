@@ -17,7 +17,9 @@ It is easy to make simple plots, but, with a little experience, you can make alm
 
 To start, we will explore the values in the `mat_mort_ratio` column of our data frame.
 
-One simple thing we could do, is a histogram.  R has a `hist` function, to make histograms.  Here is a histogram for the `mat_mort_ratio` column.
+One simple thing we could do is a histogram.  R has a `hist` function,
+to make histograms.  Here you will make a histogram for the
+`mat_mort_ratio` column.
 
 `@instructions`
 Run the code in the script window, to show the histogram of the `mat_mort_ratio` values.  Click "Submit" when you have finished.
@@ -223,11 +225,11 @@ key: f1fad864ed
 xp: 100
 ```
 
-You are well on your way to mastery.
+You are well on your way to masteRy.
 
 Here is an exercise that is a little more difficult, to stretch your new skills.
 
-You are going to plot the total health expenditure for each country against the maternal mortality ratio.  You first have to calculate the total health expenditure, and the plot it against the `mat_mort_ratio` column of the data frame.
+You are going to plot the total health expenditure for each country against the maternal mortality ratio.  You first have to calculate the total health expenditure, and then plot it against the `mat_mort_ratio` column of the data frame.
 
 `@instructions`
 Make a new variable `total_health_exp` with the total dollar health expenditure
@@ -235,7 +237,8 @@ for every country.  The variable should be the multiplication of the values in
 the `health_exp_per_cap` column by the corresponding values in the `population`
 column.
 
-Plot `total_health_exp` on the x axis against the values from the `mat_mort_ratio` column.
+Plot `total_health_exp` (on the x axis) against the values from the
+`mat_mort_ratio` column (on the y axis).
 
 `@hint`
 Did you calculate `total_health_exp` with `gender_data$health_exp_per_cap * gender_data$population`?
