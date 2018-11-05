@@ -11,8 +11,10 @@ this approach quickly leads to a large increase in power and efficiency.'
 type: VideoExercise
 key: 8961e8aa9e
 xp: 50
+skills: 1
 video_link: //player.vimeo.com/video/298272711
 ```
+
 
 ---
 
@@ -90,7 +92,9 @@ type: VideoExercise
 key: 500a13214d
 xp: 50
 video_link: //player.vimeo.com/video/298409140
+skills: 1
 ```
+
 
 ---
 
