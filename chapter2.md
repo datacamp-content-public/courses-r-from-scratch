@@ -103,7 +103,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 
 `@sct`
 ```{r}
-msg1 <- "Look carefully at two values output from 'dim".  What is the order of the values - rows and columns, or columns and rows?"
+msg1 <- "Look carefully at two values output from 'dim'.  What is the order of the values - rows and columns, or columns and rows?"
 msg2 <- "Yes, dim shows number of rows and number of columns"
 msg3 <- "dim does show us the number of rows and columns."
 ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
