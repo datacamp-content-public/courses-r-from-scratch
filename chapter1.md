@@ -9,10 +9,12 @@ description: 'R is a language that allows you to define your data analysis in wo
 type: VideoExercise
 key: 3d51e5b8dd
 xp: 50
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/298272711
 ```
 
-`@projector_key`
-5f71620cfafcc07e53e3b1d91199d391
 
 ---
 
@@ -216,8 +218,8 @@ ex() %>% check_output("data\\.frame", missing_msg = "Did you display the class()
 ```yaml
 type: VideoExercise
 key: 2b754578ad
+lang: r
 xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/298409140
 ```
-
-`@projector_key`
-1c9b727bc0da50612122d1f9859d90ff
