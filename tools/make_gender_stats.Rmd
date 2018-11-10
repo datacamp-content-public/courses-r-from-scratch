@@ -5,7 +5,7 @@ jupyter:
       extension: .Rmd
       format_name: rmarkdown
       format_version: '1.0'
-      jupytext_version: 0.8.1
+      jupytext_version: 0.8.2
   kernelspec:
     display_name: Python 3
     language: python
@@ -202,9 +202,10 @@ gender_stats
 
 We should write a data dictionary too.  We will have to backslash escape dollars for the Markdown output.
 
-
-# with open('gender_stats_data_dict.md', 'wt') as fobj:
+```{python}
+with open('gender_stats_data_dict.md', 'wt') as fobj:
     fobj.write('# Gender statistics data dictionary\n\n')
     for name, rename in renamers:
         name = name.replace('$', '\$')  # For Markdown
         fobj.write(f'* `{rename}`: {name}.\n')
+```
