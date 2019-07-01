@@ -1,6 +1,7 @@
 ---
 title: 'The R way'
 description: 'R is a language that allows you to define your data analysis in words.  This may be an unfamiliar way of working, but experience shows that this approach quickly leads to a large increase in power and efficiency.'
+free_preview: true
 ---
 
 ## R is not Excel
