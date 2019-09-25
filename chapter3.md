@@ -36,7 +36,7 @@ You should have something like `gender_data$` followed by the column name.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 ```
 
 `@sample_code`
@@ -95,7 +95,7 @@ You should start with a line starting `health_exp_col <- gender_data$`.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 ```
 
 `@sample_code`
@@ -166,7 +166,7 @@ Make sure you are looking at the _last_ 6 rows.  Find the NAs in the
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 health_exp_col <- gender_data$health_exp_per_cap
 ```
 
@@ -211,7 +211,7 @@ mean of the not-missing values)?  Or is there an `NA`?
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 health_exp_col <- gender_data$health_exp_per_cap
 ```
 
@@ -254,7 +254,7 @@ window.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 health_exp_col <- gender_data$health_exp_per_cap
 ```
 
@@ -305,7 +305,7 @@ You should have two lines of code, starting `median(health_exp_col`, one that do
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 health_exp_col <- gender_data$health_exp_per_cap
 ```
 
@@ -369,7 +369,7 @@ Are you using `gender_data$gdp[1]` divided by `gender_data$population[1]`?
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 ```
 
 `@sample_code`
@@ -420,7 +420,7 @@ If you have deleted the code, copy paste `gender_data$gdp
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 ```
 
 `@sample_code`
@@ -453,9 +453,10 @@ xp: 100
 Here are the column names for `gender_data`, with their corresponding description:
 
 * `fert_rate`: Fertility rate, total (births per woman).
-* `gdp`: GDP (current US\$).
+* `gdp_us_billion`: GDP (in billions of current US dollars; 1 billion
+  = 1000,000,000)
 * `health_exp_per_cap`: Health expenditure per capita, PPP (constant 2011
-  international \$).
+  international dollars).
 * `health_exp_pub`: Health expenditure, public (% of GDP).
 * `prim_ed_girls`: Primary education, pupils (% female).
 * `mat_mort_ratio`: Maternal mortality ratio (modeled estimate, per 100,000 live births).
@@ -479,7 +480,7 @@ Multiply `gender_data$health_exp_per_cap` by `gender_data$population`.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 ```
 
 `@sample_code`

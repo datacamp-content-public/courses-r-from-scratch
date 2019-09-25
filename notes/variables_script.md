@@ -5,7 +5,7 @@ Now you have run your first analysis in R.
 Remember the first line in the code for the last exercise:
 
 ```
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 ```
 
 The line reads the data from <http://bit.ly/gender-stats-data> into memory, and

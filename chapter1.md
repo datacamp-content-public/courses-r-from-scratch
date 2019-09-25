@@ -41,7 +41,7 @@ through 2016.
 Here are the data files:
 
 * [variable description](http://bit.ly/gender-stats-variables)
-* [data file](http://bit.ly/gender-stats-data).
+* [data file](http://bit.ly/gender-stats-2012-16).
 
 As you have already seen, we will load some data, and have a look at the first few rows.
 
@@ -65,7 +65,7 @@ When you've had a look, click "Submit Answer" to carry on to the next section.
 `@sample_code`
 ```{r}
 # Read the data into memory
-gender_data = read.csv('http://bit.ly/gender-stats-data')
+gender_data = read.csv('http://bit.ly/gender-stats-2012-16')
 # Show the first 6 rows
 head(gender_data)
 # Plot Health Expenditure Per Capita (x axis) against the
@@ -76,7 +76,7 @@ plot(gender_data$health_exp_per_cap, gender_data$mat_mort_ratio)
 `@solution`
 ```{r}
 # Read the data into memory
-gender_data = read.csv('http://bit.ly/gender-stats-data')
+gender_data = read.csv('http://bit.ly/gender-stats-2012-16')
 ```
 
 `@sct`
@@ -186,7 +186,7 @@ This tiny exercise is more revision from <https://campus.datacamp.com/courses/fr
 Remember that the first line of R code we ran in this tutorial was:
 
 ```
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 ```
 
 In the variables tutorial, you found how to find what type of thing a variable contained, using the `class` function.
@@ -211,7 +211,7 @@ To show what type of thing a variable `my_variable` points to, use `class(my_var
 `@sample_code`
 ```{r}
 # First we create the variable again
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 
 # Here, write the code to display what type of thing "gender_data" is pointing to.
 
@@ -220,7 +220,7 @@ gender_data <- read.csv('http://bit.ly/gender-stats-data')
 `@solution`
 ```{r}
 # First we create the variable again
-gender_data <- read.csv('http://bit.ly/gender-stats-data')
+gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
 
 # Here, write the code to display what type of thing "gender_data" is pointing to.
 class(gender_data)
