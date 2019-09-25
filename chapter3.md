@@ -450,9 +450,19 @@ key: 8f7d4d205f
 xp: 100
 ```
 
-Have a look at [the column descriptions](http://bit.ly/gender-stats-variables) for this data file.
+Here are the column names for `gender_data`, with their corresponding description:
 
-The column `health_exp_per_cap` is the health expenditure per person in the country.
+* `fert_rate`: Fertility rate, total (births per woman).
+* `gdp`: GDP (current US\$).
+* `health_exp_per_cap`: Health expenditure per capita, PPP (constant 2011
+  international \$).
+* `health_exp_pub`: Health expenditure, public (% of GDP).
+* `prim_ed_girls`: Primary education, pupils (% female).
+* `mat_mort_ratio`: Maternal mortality ratio (modeled estimate, per 100,000 live births).
+* `population`: Population, total.
+
+The column `health_exp_per_cap` is the health expenditure per person in the
+country.
 
 Now we want to calculate the total dollar expenditure on health.
 
