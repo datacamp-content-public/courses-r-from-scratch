@@ -34,11 +34,11 @@ The data we are analyzing are a subset from this dataset from the World Bank
 on gender and inequality:
 <https://data.worldbank.org/data-catalog/gender-statistics>.
 
-The subset is a selection of variables for every country. For each
-variable, we have taken the mean of all available values from 2012
+The subset is a selection of measures for every country. For each
+measure, we have taken the mean of all available values from 2012
 through 2016.  Here is the [data file URL](http://bit.ly/wb-gender-stats).
 
-The variables (columns) in this file are:
+The measures (columns) in this file are:
 
 * `fert_rate`: Fertility rate, total (births per woman).
 * `gdp_us_billion`: GDP (in billions of current US dollars; 1 billion
@@ -51,7 +51,9 @@ The variables (columns) in this file are:
   live births).
 * `population`: Population in millions.
 
-As you have already seen, we will load some data, and have a look at the first few rows.
+As you have already seen, we will load some data, and have a look at the first
+few rows.  Each row has the data for one country.  Each column has the data for
+one measure.
 
 Don't worry about the details of how this works, we will come back to those
 over the rest of the course.
