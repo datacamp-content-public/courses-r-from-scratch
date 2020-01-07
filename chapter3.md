@@ -459,8 +459,9 @@ Here are the column names for `gender_data`, with their corresponding descriptio
   international dollars).
 * `health_exp_pub`: Health expenditure, public (% of GDP).
 * `prim_ed_girls`: Primary education, pupils (% female).
-* `mat_mort_ratio`: Maternal mortality ratio (modeled estimate, per 100,000 live births).
-* `population`: Population, total.
+* `mat_mort_ratio`: Maternal mortality ratio (modeled estimate, per 100,000
+  live births).
+* `population`: Population in millions.
 
 The column `health_exp_per_cap` is the health expenditure per person in the
 country.

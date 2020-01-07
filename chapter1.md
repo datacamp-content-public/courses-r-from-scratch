@@ -36,16 +36,25 @@ on gender and inequality:
 
 The subset is a selection of variables for every country. For each
 variable, we have taken the mean of all available values from 2012
-through 2016.
+through 2016.  Here is the [data file URL](http://bit.ly/wb-gender-stats).
 
-Here are the data files:
+The variables (columns) in this file are:
 
-* [variable description](http://bit.ly/gender-stats-variables)
-* [data file](http://bit.ly/wb-gender-stats).
+* `fert_rate`: Fertility rate, total (births per woman).
+* `gdp_us_billion`: GDP (in billions of current US dollars; 1 billion
+  = 1000,000,000)
+* `health_exp_per_cap`: Health expenditure per capita, PPP (constant 2011
+  international dollars).
+* `health_exp_pub`: Health expenditure, public (% of GDP).
+* `prim_ed_girls`: Primary education, pupils (% female).
+* `mat_mort_ratio`: Maternal mortality ratio (modeled estimate, per 100,000
+  live births).
+* `population`: Population in millions.
 
 As you have already seen, we will load some data, and have a look at the first few rows.
 
-Don't worry about the details of how this works, we will come back to those over the rest of the course.
+Don't worry about the details of how this works, we will come back to those
+over the rest of the course.
 
 `@instructions`
 You are starting with the DataCamp interface.  On the right you see an editor.  It has some R code, ready to run.
