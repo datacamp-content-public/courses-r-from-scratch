@@ -30,7 +30,7 @@ into the script window.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -78,7 +78,7 @@ column?
 
 `@pre_exercise_code`
 ```{r}
-gender_data = read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data = read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -129,7 +129,7 @@ Do you have a variable `mat_mort_col` that points to `gender_data$mat_mort_ratio
 
 `@pre_exercise_code`
 ```{r}
-gender_data = read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data = read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -191,7 +191,7 @@ gender_data$mat_mort_ratio)`.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -245,7 +245,7 @@ Did you calculate `total_health_exp` with `gender_data$health_exp_per_cap * gend
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`

@@ -33,10 +33,10 @@ R functions work the same way.
 In fact you have already seen a function.  Remember our first line:
 
 ```
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
-On the Left Hand Side we have `gender_data` - the new name we give to the thing on the Right Hand Side.  The Right Hand Side is a *function call*.  The function is `read.csv`.  The argument is the URL `'http://bit.ly/gender-stats-2012-16'`.  We *call* the `read.csv` function with the argument `'http://bit.ly/gender-stats-2012-16'` to return a value, where the value is the data frame.
+On the Left Hand Side we have `gender_data` - the new name we give to the thing on the Right Hand Side.  The Right Hand Side is a *function call*.  The function is `read.csv`.  The argument is the URL `'http://bit.ly/wb-gender-stats'`.  We *call* the `read.csv` function with the argument `'http://bit.ly/wb-gender-stats'` to return a value, where the value is the data frame.
 
 R has many useful functions that work on data frames.  Let's start with the function `dim`.
 
@@ -52,7 +52,7 @@ Run the code to see what `dim` returns.  Submit the code to go on the next quest
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -98,7 +98,7 @@ The first output from `dim` is the number of rows.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sct`
@@ -139,7 +139,7 @@ You will need something starting with `names(` and ending with `)`.  What goes i
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -201,7 +201,7 @@ You will need something starting with `str(` and ending with `)`.  What goes ins
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -255,7 +255,7 @@ the variable name, followed by the data type.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sct`
@@ -297,7 +297,7 @@ goes inside the brackets?
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -358,7 +358,7 @@ the number `9.888e+06` means $9.888 * 10^6$ - i.e `9888000`.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sct`
@@ -400,7 +400,7 @@ Did you use both `head` and `tail` on `gender_data`?
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`

@@ -36,7 +36,7 @@ You should have something like `gender_data$` followed by the column name.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -95,7 +95,7 @@ You should start with a line starting `health_exp_col <- gender_data$`.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -166,7 +166,7 @@ Make sure you are looking at the _last_ 6 rows.  Find the NAs in the
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 health_exp_col <- gender_data$health_exp_per_cap
 ```
 
@@ -211,7 +211,7 @@ mean of the not-missing values)?  Or is there an `NA`?
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 health_exp_col <- gender_data$health_exp_per_cap
 ```
 
@@ -254,7 +254,7 @@ window.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 health_exp_col <- gender_data$health_exp_per_cap
 ```
 
@@ -305,7 +305,7 @@ You should have two lines of code, starting `median(health_exp_col`, one that do
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 health_exp_col <- gender_data$health_exp_per_cap
 ```
 
@@ -369,7 +369,7 @@ Are you using `gender_data$gdp[1]` divided by `gender_data$population[1]`?
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -420,7 +420,7 @@ If you have deleted the code, copy paste `gender_data$gdp
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`
@@ -480,7 +480,7 @@ Multiply `gender_data$health_exp_per_cap` by `gender_data$population`.
 
 `@pre_exercise_code`
 ```{r}
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
 `@sample_code`

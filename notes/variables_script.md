@@ -5,10 +5,10 @@ Now you have run your first analysis in R.
 Remember the first line in the code for the last exercise:
 
 ```
-gender_data <- read.csv('http://bit.ly/gender-stats-2012-16')
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
 ```
 
-The line reads the data from <http://bit.ly/gender-stats-data> into memory, and
+The line reads the data from <http://bit.ly/wb-gender-stats> into memory, and
 gives the data a label, `gender_data`.
 
 More formally, this line is an *assignment statement*.  It's called an
@@ -28,11 +28,11 @@ this statement has run, we have a new *variable*.  The *variable name* will be
 
 The part to right is called the Right Hand Side (RHS).  This is something that
 creates our value. In our case this is
-`read.csv('http://bit.ly/gender-stats-data')`.
+`read.csv('http://bit.ly/gender-stats-data')`
 
 After this statement, the variable named `gender_data` points to the value we
 got from the RHS.
 
 Variables are very important in R, and other programming languages.  Variables
-are names that make it much easier for us to refer to data, and to store data
-from previous steps.
+are names that make it easier for us to refer to data, and to store data from
+previous steps.
