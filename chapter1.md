@@ -116,7 +116,9 @@ to learn more about:
 * the DataCamp interface (that you are using now) and
 * variables in R.
 
-Just do that chapter from the tutorial.  When you get to the page *Create a vector* - stop, and come back to this page.
+Just do that chapter from the tutorial.  When you finish the page called "What's that data type?", stop, and come back to this page.
+
+If you don't stop, and continue after the "What's that data type" page, DataCamp will stop you and ask you to pay.  See [this video](https://vimeo.com/370870798) for more details.
 
 Now here is a little revision exercise.
 
