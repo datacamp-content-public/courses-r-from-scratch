@@ -118,7 +118,7 @@ to learn more about:
 
 Just do that chapter from the tutorial.  When you finish the page called "What's that data type?", stop, and come back to this page.
 
-If you don't stop, and continue after the "What's that data type" page, DataCamp will stop you and ask you to pay.  See [this video](https://vimeo.com/370870798) for more details.
+If you don't stop, and continue after the "What's that data type" page, DataCamp will stop you and ask you to pay. If it does that, click "Go back", and then navigate back to this R from Scratch course; it should still be open in its own browser tab. See [this video](https://vimeo.com/370870798) for more details.
 
 Now here is a little revision exercise.
 
