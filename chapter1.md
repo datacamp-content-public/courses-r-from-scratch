@@ -117,7 +117,6 @@ Alex is thinking of having the fish for £10.50, and Billie is leaning towards
 the chicken, at £9.25.  First they calculate their combined bill.
 
 `@instructions`
-
 As before, you see an editor on the right.  It has the calculation, ready to run.
 
 As you'd expect, we use `+` to add things in R.
