@@ -231,7 +231,7 @@ Back to Alex and Billie.  You can see their first attempt at calculating the bil
 `@hint`
 Welcome back to the wonderful world of GCSE maths!  Remember the [order of
 operations](https://en.wikipedia.org/wiki/Order_of_operations).  If you want
-the change the order of operations, you need parentheses around the bits you
+to change the order of operations, you need parentheses around the bits you
 want to calculate first.  For example to add 2 to 3 and *then* multiply by 4,
 you would need `(2 + 3) * 4`.
 
@@ -257,7 +257,7 @@ you would need `(2 + 3) * 4`.
 `@sct`
 ```{r}
 success_msg("Well done - you are mastering the R calculator.")
-ex() %>% check_output("2\\.9625")
+ex() %>% check_output("2\\.9625", missing_msg="The result should be near to £3")
 ```
 
 ---
@@ -270,17 +270,20 @@ key: 95d0c57e70
 xp: 100
 ```
 
-<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+We are starting to get to the point where we need variables, of which, more in
+the next exercises.
+
+But for now - try calculating the final bill for Alex and Billie using R like
+a calculator, as we have until now.   The final bill is their original total,
+plus tip.
 
 `@instructions`
-<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-- Instruction 1
-- Instruction 2
+Edit the code in the editor to display Alex and Billie's final bill - that is the total without tip, plus the tip.
 
 `@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+Imagine Alex and Billie's orders were £5 and £6 respectively, then their bill
+plus 15% tip would be `(5 + 6) + (5 + 6) * 0.15`.  Actually, this is the same
+as `(5 + 6) * 1.15`.
 
 `@pre_exercise_code`
 ```{r}
@@ -289,17 +292,22 @@ xp: 100
 
 `@sample_code`
 ```{r}
-
+# This is just the total bill before tip.
+# Change this line to make this the total bill including the tip
+10.50 + 9.25
 ```
 
 `@solution`
 ```{r}
-
+# This is just the total bill before tip.
+# Change this line to make this the total bill including the tip
+(10.50 + 9.25) + (10.50 + 9.25) * 0.15
 ```
 
 `@sct`
 ```{r}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+success_msg("Nice work - now you're on an R roll.")
+ex() %>% check_output("22\\.7125", missing_msg="The result should be near to £23")
 ```
 
 ---
@@ -326,17 +334,35 @@ key: 97aa9fb069
 xp: 100
 ```
 
-<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+We are back to Alex and Billie's bill. Alex was planing to have the fish for
+£10.50, and Billie wants the chicken, at £9.25.  We found their final bill,
+plus tip was `10.50 + 9.25
++ (10.50 + 9.25) * 0.15`.
+
+But - what if Alex changes her mind, and wants to have the aubergine gratin,
+for £8.95?  We have to type the whole calculation out again, but change the
+previous £10.50 (the fish) to the current £8.95 (the aubergine), like this:
+
+```
+8.95 + 9.25 + (8.95 + 9.25) * 0.15
+```
+
+We would like a way to give labels to these numbers, to make our calculations easier to read, and easier to repeat.
+
+We need *variables*.
 
 `@instructions`
-<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-- Instruction 1
-- Instruction 2
+In the editor on the right, you'll see that we have used the code `a <- 10.50`
+to set the variable `a` to have the value 10.50; the cost of Alex' main course.
+`b <- 9.25` sets the variable `b` to have the value 9.25; the cost of Billie's
+main course.  Read the `<-` characters as "set equal to".  Then `a + b` adds
+the value for `a` to the value for `b` and shows the result.
+
+Change the value for `a` to the price of the aubergine gratin, and run the
+code, so `a + b` returns the new correct result.
 
 `@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+Your code should include a line `a <- 8.95`.
 
 `@pre_exercise_code`
 ```{r}
@@ -345,17 +371,24 @@ xp: 100
 
 `@sample_code`
 ```{r}
-
+# Calculate Alex and Billie's total bill (before tip).
+a <- 10.50
+b <- 9.25
+a + b
 ```
 
 `@solution`
 ```{r}
-
+# Calculate Alex and Billie's total bill (before tip).
+a <- 8.95
+b <- 9.25
+a + b
 ```
 
 `@sct`
 ```{r}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+success_msg("Well done - your first foray with vegetables and variables.")
+ex() %>% check_output("18\\.2", missing_msg="The result should be near to £18")
 ```
 
 ---
