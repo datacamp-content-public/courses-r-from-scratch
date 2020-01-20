@@ -119,7 +119,9 @@ the chicken, at £9.25.  First they calculate their combined bill.
 `@instructions`
 As before, you see an editor on the right.  It has the calculation, ready to run.
 
-The editor contains a line of R code.  As you would predict, R understands numbers like `10.50`, and it understands `+` between the numbers as an instruction to add the numbers.
+The editor contains a line of R code.  As you might predict, R understands
+numbers like `10.50`, and it understands `+` between the numbers as an
+instruction to add the numbers.
 
 But - the numbers aren't exactly right for Alex' and Billie's bill.  Edit them
 so they match the numbers above, then click on "Submit Answer" to carry on to
@@ -255,7 +257,7 @@ you would need `(2 + 3) * 4`.
 `@sct`
 ```{r}
 success_msg("Well done - you are mastering the R calculator.")
-ex() %>% check_output("11\\.8875")
+ex() %>% check_output("2\\.9625")
 ```
 
 ---
