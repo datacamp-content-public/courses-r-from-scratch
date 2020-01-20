@@ -121,9 +121,9 @@ As before, you see an editor on the right.  It has the calculation, ready to run
 
 The editor contains a line of R code.  As you would predict, R understands numbers like `10.50`, and it understands `+` between the numbers as an instruction to add the numbers.
 
-Click on the "Run Code" button to see the total.
-
-When you've had a look, click "Submit Answer" to carry on to the next section.
+But - the numbers aren't exactly right for Alex' and Billie's bill.  Edit them
+so they match the numbers above, then click on "Submit Answer" to carry on to
+the next section.
 
 `@hint`
 
@@ -135,7 +135,7 @@ When you've had a look, click "Submit Answer" to carry on to the next section.
 
 `@sample_code`
 ```{r}
-10.50 + 9.25
+10.05 + 9.52
 ```
 
 `@solution`
@@ -146,7 +146,7 @@ When you've had a look, click "Submit Answer" to carry on to the next section.
 `@sct`
 ```{r}
 success_msg("That's correct.")
-ex() %>% check_output("19\.75", missing_msg = "Did you run the code?")
+ex() %>% check_output("19\\.75", missing_msg = "Did you fix the amounts?")
 ```
 
 ---
@@ -201,6 +201,66 @@ ex() %>% check_output("^$", missing_msg = "Oops - did you put some code in there
 
 ---
 
+## Calculating the bill again
+
+```yaml
+type: NormalExercise
+key: 3101c3d7a1
+xp: 100
+```
+
+Let's continue with Alex and Billie's struggle with their bill.
+
+They realize that they will also need to pay a tip.
+
+They think a 15% tip is reasonable.  Now they need to multiply their total bill
+by 0.15, to get the tip.  Given the bill is about £20, the tip will be about
+£3.
+
+In R, as for your calculator, `*` means multiplication.
+
+For example, if you type `20 * 0.15` in R, and make it run, it will multiply 20 by 0.15 to get 3.
+
+At the bottom right of the DataCamp interface, you should see a sub-window called "R Console".  This is a kind of scratch-space that you can use to type in R code, and see what results you get.  Try it now by typing `20 * 0.15` in the R Console.
+
+`@instructions`
+
+Back to Alex and Billie.  You can see their first attempt at calculating the bill, with tip, in the editor on the right.  We've estimated the answer should be somewhere near £3.  Try running the code in the editor, with "Run Code".  It isn't quite right.  What did they do wrong?  How do you think you could fix it?
+
+`@hint`
+Welcome back to the wonderful world of GCSE maths!  Remember the [order of
+operations](https://en.wikipedia.org/wiki/Order_of_operations).  If you want
+the change the order of operations, you need parentheses around the bits you
+want to calculate first.  For example to add 2 to 3 and *then* multiply by 4,
+you would need `(2 + 3) * 4`.
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+# This is Alex and Billie's first attempt, but it's not quite right.
+# Fix it to get the correct amount for a 15% tip.
+10.50 + 9.25 * 0.15
+```
+
+`@solution`
+```{r}
+# This is Alex and Billie's first attempt, but it's not quite right.
+# Fix it to get the correct amount for a 15% tip.
+(10.50 + 9.25) * 0.15
+```
+
+`@sct`
+```{r}
+success_msg("Well done - you are mastering the R calculator.")
+ex() %>% check_output("11\\.8875")
+```
+
+---
+
 ## Introduction to variables
 
 ```yaml
@@ -215,77 +275,6 @@ video_link: //player.vimeo.com/video/298409140
 
 ---
 
-## Variable interlude
-
-```yaml
-type: NormalExercise
-key: 3101c3d7a1
-xp: 100
-```
-
-Now you know about variables, go over to
-<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1>
-to learn more about:
-
-* the DataCamp interface (that you are using now) and
-* variables in R.
-
-Just do that chapter from the tutorial.  When you get to the page *Create a vector* - stop, and come back to this page.
-
-Now here is a little revision exercise.
-
-`@instructions`
-We are back to variables, after the exercises at <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1>.
-
-Remember the fruit from those exercises?   Now we get exotic.
-
-Create a variable called `my_pomegranates` and set it equal to 112.
-
-Create another variable called `my_kiwis` and set it equal to 92.
-
-Create a third variable called `my_exotic_fruits` and set it equal to the sum of `my_pomegranates` and `my_kiwis`.
-
-`@hint`
-Go back through <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1> for inspiration, if you can't remember how to set variables.
-
-`@pre_exercise_code`
-```{r}
-
-```
-
-`@sample_code`
-```{r}
-# Create a variable called "my_pomegranates" and set it equal to 112.
-
-
-# Create another variable called "my_kiwis" and set it equal to 92.
-
-
-# Create a third variable called "my_exotic_fruits" and set it equal to the sum of `my_pomegranates` and "my_kiwis"
-
-```
-
-`@solution`
-```{r}
-# Create a variable called "my_pomegranates" and set it equal to 112.
-my_pomegranates <- 112
-
-# Create another variable called "my_kiwis" and set it equal to 92.
-my_kiwis <- 92
-
-# Create a third variable called "my_exotic_fruits" and set it equal to the sum of `my_pomegranates` and "my_kiwis"
-my_exotic_fruits <- my_pomegranates + my_kiwis
-```
-
-`@sct`
-```{r}
-success_msg("Well done - you are all over variables")
-ex() %>% check_object("my_pomegranates") %>% check_equal()
-ex() %>% check_object("my_kiwis") %>% check_equal()
-ex() %>% check_object("my_exotic_fruits") %>% check_equal()
-```
-
----
 
 ## Setting a variable
 
