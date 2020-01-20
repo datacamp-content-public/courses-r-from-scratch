@@ -171,12 +171,12 @@ Nearly all the bits of code you will see in this tutorial have comments in
 them, to explain what the lines of code are doing.
 
 `@instructions`
-
 When you run the code on the right, it does not show any result.  In this case,
 that is because the computer sees the `#` at the beginning of the line, and
 then ignores the rest.
 
 `@hint`
+
 
 `@pre_exercise_code`
 ```{r}
