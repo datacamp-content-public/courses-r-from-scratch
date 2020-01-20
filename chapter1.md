@@ -203,7 +203,7 @@ ex() %>% check_output("^$", missing_msg = "Oops - did you put some code in there
 
 ---
 
-## Calculating the bill again
+## What's the tip?
 
 ```yaml
 type: NormalExercise
@@ -258,6 +258,48 @@ you would need `(2 + 3) * 4`.
 ```{r}
 success_msg("Well done - you are mastering the R calculator.")
 ex() %>% check_output("2\\.9625")
+```
+
+---
+
+## Bill plus tip
+
+```yaml
+type: NormalExercise
+key: 95d0c57e70
+xp: 100
+```
+
+<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+
+`@instructions`
+<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+- Instruction 1
+- Instruction 2
+
+`@hint`
+<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
+- This is an example hint.
+- This is an example hint.
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
 ```
 
 ---
