@@ -224,7 +224,6 @@ For example, if you type `20 * 0.15` in R, and make it run, it will multiply 20 
 At the bottom right of the DataCamp interface, you should see a sub-window called "R Console".  This is a kind of scratch-space that you can use to type in R code, and see what results you get.  Try it now by typing `20 * 0.15` in the R Console.
 
 `@instructions`
-
 Back to Alex and Billie.  You can see their first attempt at calculating the bill, with tip, in the editor on the right.  We've estimated the answer should be somewhere near £3.  Try running the code in the editor, with "Run Code".  It isn't quite right.  What did they do wrong?  How do you think you could fix it?
 
 `@hint`
@@ -274,7 +273,6 @@ video_link: //player.vimeo.com/video/298409140
 
 
 ---
-
 
 ## Setting a variable
 
