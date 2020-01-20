@@ -28,10 +28,10 @@ xp: 100
 skills: 1
 ```
 
-The first exercise is to run the analysis from the video.
+The first exercise is to run a version of the analysis from the video.
 
-The data we are analyzing are a subset from this dataset from the World Bank
-on gender and inequality:
+The data we are analyzing are a modified subset from this dataset from the
+World Bank on gender and inequality:
 <https://data.worldbank.org/data-catalog/gender-statistics>.
 
 The subset is a selection of measures for every country. For each
@@ -106,17 +106,31 @@ key: be79e8ff2b
 xp: 100
 ```
 
-<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+You can use R simply as a calculator.  Many of us feel the need for a calculator when we are calculating the tip and the total in a restaurant.  We'll do that here.
+
+Our problem is the following:
+
+Alex and Billie are at a restaurant, getting ready to order. They don't have
+much money, so they are calculating their expected bill before they order.
+
+Alex is thinking of having the fish for £10.50, and Billie is leaning towards
+the chicken, at £9.25.  First they calculate their combined bill.
 
 `@instructions`
-<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-- Instruction 1
-- Instruction 2
+
+As before, you see an editor on the right.  It has the calculation, ready to run.
+
+As you'd expect, we use `+` to add things in R.
+
+You'll also see that there is a line before the calculation itself, starting
+with `#`.  This is *comment*.  When R sees a line starting with `#`, it ignores it.  The `#` tells R that the text on that line is not code, but something for humans to read.  We often use comments to explain what the next line of code is doing.
+
+Click on the "Run Code" button to see the total.
+
+When you've had a look, click "Submit Answer" to carry on to the next section.
 
 `@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+
 
 `@pre_exercise_code`
 ```{r}
@@ -125,17 +139,18 @@ xp: 100
 
 `@sample_code`
 ```{r}
-
+10.50 + 9.25
 ```
 
 `@solution`
 ```{r}
-
+10.50 + 9.25
 ```
 
 `@sct`
 ```{r}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+success_msg("That's correct.")
+ex() %>% check_output("19\75", missing_msg = "Did you run the code?")
 ```
 
 ---
