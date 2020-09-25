@@ -481,7 +481,8 @@ final_total <- both_mains + both_mains * 0.15
 state <- ex()
 code <- state$get('student_code')
 msg <- if (grepl('...', code, fixed=TRUE)) "Did you replace the '...' in the example code?" else NULL
-check_error(state, incorrect_msg='My message')
+ex()  %>% check_or(check_error(.,msg), check_object(.,"final_total")  %>% check_equal(eval = FALSE))
+# check_error(state, incorrect_msg='My message')
 ft_state <- check_object(state, "final_total")
 st_env = state$get('student_env')
 sl_env = state$get('solution_env')
