@@ -67,8 +67,12 @@ It has some R code, ready to run.
 Click on the "Run Code" button at the bottom of this pane, to run the analysis.
 You will see the output in the "R console" pane at the bottom-right of the screen.
 
-When you've had a look at the output, click "Submit Answer" to carry on to the
-next section.
+In general, you can use the "Run Code" button to run the code in the editor to
+see what output you get.  Use "Submit Answer" when you think the output looks right.
+
+In this case, the output should be right without you having to make any
+changes in the editor. When you've had a look at the output, click "Submit
+Answer" to carry on to the next section.
 
 `@hint`
 
@@ -373,8 +377,9 @@ We need *variables*.
 In the editor on the right, you'll see that we have used the code `a <- 10.50`
 to set the variable `a` to have the value 10.50; the cost of Alex' main
 course. `b <- 9.25` sets the variable `b` to have the value 9.25; the cost of
-Billie's main course.  Read the `<-` characters as "set equal to".  Then `a
-+ b` adds the value for `a` to the value for `b` and shows the result.
+Billie's main course.  Read the `<-` characters as "set equal to".
+
+Then `a + b` adds the value for `a` to the value for `b` and shows the result.
 
 Change the value for `a` to the price of the aubergine gratin, and run the
 code, so `a + b` returns the new correct result.
