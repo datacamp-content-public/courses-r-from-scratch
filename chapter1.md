@@ -482,14 +482,14 @@ final_total <- both_mains + both_mains * 0.15
 # code <- state$get('student_code')
 # msg <- if (grepl('...', code, fixed=TRUE)) "Did you replace the '...' in the example code?" else NULL
 msg <- 'Foo'
-ex()  %>% check_or(check_error(.,msg), check_object(.,"final_total")  %>% check_equal(eval = FALSE))
+ex() %>% check_or(check_error(.,msg), check_object(.,"final_total")  %>% check_equal(eval = FALSE))
 # check_error(state, incorrect_msg='My message')
-ft_state <- check_object(state, "final_total")
-st_env = state$get('student_env')
-sl_env = state$get('solution_env')
-msg <- if (st_env$final_total == sl_env$both_mains) 'Did you add the tip?' else NULL
-check_equal(ft_state, incorrect_msg=msg)
-success_msg("Good job, you are becoming versatile with variables")
+# ft_state <- check_object(state, "final_total")
+# st_env = state$get('student_env')
+# sl_env = state$get('solution_env')
+# msg <- if (st_env$final_total == sl_env$both_mains) 'Did you add the tip?' else NULL
+# check_equal(ft_state, incorrect_msg=msg)
+# success_msg("Good job, you are becoming versatile with variables")
 ```
 
 ---
