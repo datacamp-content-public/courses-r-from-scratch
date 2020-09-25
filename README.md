@@ -3,7 +3,7 @@
 A beginners introduction to R, for the second year Bioscientists at the
 University of Birmingham.
 
-Some links I'm using:
+See some links I'm using, below.  You should log into DataCamp before going to these links.
 
 * [Build
   overview](https://www.datacamp.com/teach/repositories/3865/branches/master)
