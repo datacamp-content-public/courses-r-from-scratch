@@ -113,7 +113,7 @@ xp: 100
 
 You can use R simply as a calculator.  Many of us feel the need for
 a calculator when we are calculating the tip and the total bill in
-a restaurant. We'll do that here.
+a restaurant, even if we don't admit it.
 
 Our problem is the following.
 
@@ -170,13 +170,15 @@ key: 272e40a948
 xp: 100
 ```
 
-Unlike a calculator, we can also put notes next to our calculations, to remind us what they are for.   One way of doing this is to use a "comment".
+Unlike a calculator, we can also put notes to ourselves, next to our
+calculations, to remind us what they are for.   One way of doing this is to
+use a "comment".
 
 A comment is some text that the computer will ignore.  In R, you can make a comment by starting a line with the `#` (hash) character.
 
 When R sees a line starting with `#`, it ignores the whole line.  The `#` at
-the beginning tells R that the text on that line is not code for R to analyze
-and run, but something for humans to read.
+the beginning of the line tells R that the text on that line is not code for
+R to analyze and run, but something for humans to read.
 
 Nearly all the bits of code you will see in this tutorial have comments in
 them, to explain what the lines of code are doing.
@@ -224,25 +226,30 @@ Let's continue with Alex and Billie's struggle with their bill.
 
 They realize that they will also need to pay a tip.
 
-They think a 15% tip is reasonable.  Now they need to multiply their total bill
-by 0.15, to get the tip.  Given the bill is about £20, the tip will be about
-£3.
+They think a 15% tip is reasonable.  Now they need to multiply their total
+bill by 0.15, to get the tip.  Given the bill is about £20, the tip will be
+about £3.
 
 In R, as for your calculator, `*` means multiplication.
 
-For example, if you type `20 * 0.15` in R, and make it run, it will multiply 20 by 0.15 to get 3.
+For example, if you type `20 * 0.15` in R, and make it run, it will multiply
+20 by 0.15 to get 3.
 
-At the bottom right of the DataCamp interface, you should see a sub-window called "R Console".  This is a kind of scratch-space that you can use to type in R code, and see what results you get.  Try it now by typing `20 * 0.15` in the R Console.
+At the bottom right of the DataCamp interface, you should see a sub-window
+called "R Console".  This is a scratch-space that you can use to type in
+R code, and see what results you get.  It's useful for experimenting with
+code that you aren't yet ready to put in the main editor pane.  Try it now by
+typing `20 * 0.15` in the R Console.
 
 `@instructions`
 Back to Alex and Billie.  You can see their first attempt at calculating the bill, with tip, in the editor on the right.  We've estimated the answer should be somewhere near £3.  Try running the code in the editor, with "Run Code".  It isn't quite right.  What did they do wrong?  How do you think you could fix it?
 
 `@hint`
-Welcome back to the wonderful world of GCSE maths!  Remember the [order of
-operations](https://en.wikipedia.org/wiki/Order_of_operations).  If you want
-to change the order of operations, you need parentheses around the bits you
-want to calculate first.  For example to add 2 to 3 and *then* multiply by 4,
-you would need `(2 + 3) * 4`.
+Welcome back to the wonderful world of school mathematics!  Remember the
+[order of operations](https://en.wikipedia.org/wiki/Order_of_operations).  If
+you want to change the order of operations, you need parentheses around the
+bits you want to calculate first.  For example to add 2 to 3 and *then*
+multiply by 4, you would need `(2 + 3) * 4`.
 
 `@pre_exercise_code`
 ```{r}
@@ -282,12 +289,13 @@ xp: 100
 We are starting to get to the point where we need variables, of which, more in
 the next exercises.
 
-But for now - try calculating the final bill for Alex and Billie using R like
-a calculator, as we have until now.   The final bill is their original total,
-plus tip.
+But for now - try calculating the *final bill* for Alex and Billie using
+R like a calculator, as we have until now.   The final bill is their original
+total, *plus tip*.
 
 `@instructions`
-Edit the code in the editor to display Alex and Billie's final bill - that is the total without tip, plus the tip.
+Edit the code in the editor to display Alex and Billie's final bill - that is
+the total without tip, plus the tip.
 
 `@hint`
 Imagine Alex and Billie's orders were £5 and £6 respectively, then their bill
@@ -301,7 +309,7 @@ as `(5 + 6) * 1.15`.
 
 `@sample_code`
 ```{r}
-# This is just the total bill before tip.
+# At the moment, this is just the total bill before adding the tip.
 # Change this line to make this the total bill including the tip
 10.50 + 9.25
 ```
@@ -345,27 +353,28 @@ xp: 100
 
 We are back to Alex and Billie's bill. Alex was planing to have the fish for
 £10.50, and Billie wants the chicken, at £9.25.  We found their final bill,
-plus tip was `10.50 + 9.25
-+ (10.50 + 9.25) * 0.15`.
+plus tip was `10.50 + 9.25 + (10.50 + 9.25) * 0.15`.
 
 But - what if Alex changes her mind, and wants to have the aubergine gratin,
 for £8.95?  We have to type the whole calculation out again, but change the
-previous £10.50 (the fish) to the current £8.95 (the aubergine), like this:
+previous £10.50 (for the fish) to the current £8.95 (for the aubergine), like
+this:
 
 ```
 8.95 + 9.25 + (8.95 + 9.25) * 0.15
 ```
 
-We would like a way to give labels to these numbers, to make our calculations easier to read, and easier to repeat.
+We would like a way to give *labels* to these numbers, to make our
+calculations easier to read, and easier to repeat.
 
 We need *variables*.
 
 `@instructions`
 In the editor on the right, you'll see that we have used the code `a <- 10.50`
-to set the variable `a` to have the value 10.50; the cost of Alex' main course.
-`b <- 9.25` sets the variable `b` to have the value 9.25; the cost of Billie's
-main course.  Read the `<-` characters as "set equal to".  Then `a + b` adds
-the value for `a` to the value for `b` and shows the result.
+to set the variable `a` to have the value 10.50; the cost of Alex' main
+course. `b <- 9.25` sets the variable `b` to have the value 9.25; the cost of
+Billie's main course.  Read the `<-` characters as "set equal to".  Then `a
++ b` adds the value for `a` to the value for `b` and shows the result.
 
 Change the value for `a` to the price of the aubergine gratin, and run the
 code, so `a + b` returns the new correct result.
@@ -396,8 +405,8 @@ a + b
 
 `@sct`
 ```{r}
-success_msg("Well done - your first foray with vegetables and variables.")
-ex() %>% check_output("18\\.2", missing_msg="The result should be near to £18")
+success_msg("Well done - your first foray with food and variables.")
+ex() %>% check_output_expr("18.2", missing_msg="The result should be near to £18")
 ```
 
 ---
@@ -410,17 +419,30 @@ key: 40bc4fc39b
 xp: 100
 ```
 
-<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+In the previous section, you saw:
+
+```
+a <- 8.95
+b <- 9.25
+a + b
+```
+
+`a` and `b` a *variables*.  Variables are labels attached to values.  The *label* "a" is now attached to the *value* 8.95, and the label "b" is attached to the value 9.25.  Here we used single letters as labels, but the labels could be any word.  In the example below, we've changed used the label "alex_main" instead of "a", and "billie_main" instead of "b".  Using longer labels for variables can be helpful to remind us about the meaning of the value they attach to.
+
+We need *variables*.
 
 `@instructions`
-<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-- Instruction 1
-- Instruction 2
+In the editor on the right, you'll see that we have used the code `a <- 10.50`
+to set the variable `a` to have the value 10.50; the cost of Alex' main
+course. `b <- 9.25` sets the variable `b` to have the value 9.25; the cost of
+Billie's main course.  Read the `<-` characters as "set equal to".  Then `a
++ b` adds the value for `a` to the value for `b` and shows the result.
+
+Change the value for `a` to the price of the aubergine gratin, and run the
+code, so `a + b` returns the new correct result.
 
 `@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+Your code should include a line `a <- 8.95`.
 
 `@pre_exercise_code`
 ```{r}
@@ -429,17 +451,30 @@ xp: 100
 
 `@sample_code`
 ```{r}
-
+# Calculate Alex and Billie's total bill (including tip)
+alex_main <- 8.95
+billie_main <- 9.25
+# "both_mains" gets the value for the total before applying tip.
+both_mains <- alex_main + billie_main
+# Total with tip.  Fill in after the ...
+final_total <- both_mains ...
 ```
 
 `@solution`
 ```{r}
-
+# Calculate Alex and Billie's total bill (including tip)
+alex_main <- 8.95
+billie_main <- 9.25
+# "both_mains" gets the value for the total before applying tip.
+both_mains <- alex_main + billie_main
+# Total with tip
+final_total <- both_mains + both_mains * 0.15
 ```
 
 `@sct`
 ```{r}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+success_msg("Good job, you are becoming versatile with variables")
+ex() %>% check_object("final_total") %>% check_equal()
 ```
 
 ---
