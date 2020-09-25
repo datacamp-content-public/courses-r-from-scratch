@@ -478,9 +478,10 @@ final_total <- both_mains + both_mains * 0.15
 
 `@sct`
 ```{r}
-state <- ex()
-code <- state$get('student_code')
-msg <- if (grepl('...', code, fixed=TRUE)) "Did you replace the '...' in the example code?" else NULL
+# state <- ex()
+# code <- state$get('student_code')
+# msg <- if (grepl('...', code, fixed=TRUE)) "Did you replace the '...' in the example code?" else NULL
+msg <- 'Foo'
 ex()  %>% check_or(check_error(.,msg), check_object(.,"final_total")  %>% check_equal(eval = FALSE))
 # check_error(state, incorrect_msg='My message')
 ft_state <- check_object(state, "final_total")
