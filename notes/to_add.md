@@ -12,3 +12,7 @@ This is a bit from:
 * Adding strings to numbers.
 * Basic data types in R.  Numerics, integers, booleans, strings.
 * What's that data type?
+
+## Remaining
+
+Using the console.

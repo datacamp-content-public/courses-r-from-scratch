@@ -59,11 +59,16 @@ Don't worry about the details of how this works, we will come back to those
 over the rest of the course.
 
 `@instructions`
-You are starting with the DataCamp interface.  On the right you see an editor.  It has some R code, ready to run.
+You are starting with the DataCamp interface.  On pane at the top right of this
+window, you see an editor.
 
-Click on the "Run Code" button to run the analysis.  You will see the output in the Window on the right.
+It has some R code, ready to run.
 
-When you've had a look, click "Submit Answer" to carry on to the next section.
+Click on the "Run Code" button at the bottom of this pane, to run the analysis.
+You will see the output in the "R console" pane at the bottom-right of the screen.
+
+When you've had a look at the output, click "Submit Answer" to carry on to the
+next section.
 
 `@hint`
 
@@ -106,18 +111,22 @@ key: be79e8ff2b
 xp: 100
 ```
 
-You can use R simply as a calculator.  Many of us feel the need for a calculator when we are calculating the tip and the total in a restaurant.  We'll do that here.
+You can use R simply as a calculator.  Many of us feel the need for
+a calculator when we are calculating the tip and the total bill in
+a restaurant. We'll do that here.
 
-Our problem is the following:
+Our problem is the following.
 
 Alex and Billie are at a restaurant, getting ready to order. They don't have
-much money, so they are calculating their expected bill before they order.
+much money, so they are want to know what their bill will be, before they
+order.
 
 Alex is thinking of having the fish for £10.50, and Billie is leaning towards
 the chicken, at £9.25.  First they calculate their combined bill.
 
 `@instructions`
-As before, you see an editor on the right.  It has the calculation, ready to run.
+As before, you see an editor in the top-right pane.  It has the calculation,
+ready to run.
 
 The editor contains a line of R code.  As you might predict, R understands
 numbers like `10.50`, and it understands `+` between the numbers as an
