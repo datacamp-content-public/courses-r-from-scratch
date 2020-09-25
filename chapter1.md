@@ -444,6 +444,48 @@ xp: 100
 
 ---
 
+## Experimenting in the console
+
+```yaml
+type: NormalExercise
+key: 59b3b2803c
+xp: 100
+```
+
+<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+
+`@instructions`
+<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+- Instruction 1
+- Instruction 2
+
+`@hint`
+<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
+- This is an example hint.
+- This is an example hint.
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+```
+
+---
+
 ## Types of things
 
 ```yaml
@@ -533,6 +575,66 @@ xp: 100
 ```yaml
 type: NormalExercise
 key: 9c69cb7092
+xp: 100
+```
+
+This tiny exercise is more revision from <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1>.
+
+Remember that the first line of R code we ran in this tutorial was:
+
+```
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
+```
+
+In the variables tutorial, you found how to find what type of thing a variable contained, using the `class` function.
+
+You saw examples of numeric variables, and character variables.
+
+`gender_data` is also a variable.  As you remember, a variable is a name that points to a thing.
+
+What type of thing does `gender_data` point to?
+
+`@instructions`
+Use `class` to show the type of thing `gender_data` points to.
+
+`@hint`
+To show what type of thing a variable `my_variable` points to, use `class(my_variable)`.
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+# First we create the variable again
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
+
+# Here, write the code to display what type of thing "gender_data" is pointing to.
+
+```
+
+`@solution`
+```{r}
+# First we create the variable again
+gender_data <- read.csv('http://bit.ly/wb-gender-stats')
+
+# Here, write the code to display what type of thing "gender_data" is pointing to.
+class(gender_data)
+```
+
+`@sct`
+```{r}
+ex() %>% check_output("data\\.frame", missing_msg = "Did you display the class() of the gender_data?")
+```
+
+---
+
+## True, False, 0, 1
+
+```yaml
+type: NormalExercise
+key: bb06e861b9
 xp: 100
 ```
 
