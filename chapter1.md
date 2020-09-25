@@ -474,7 +474,7 @@ final_total <- both_mains + both_mains * 0.15
 `@sct`
 ```{r}
 success_msg("Good job, you are becoming versatile with variables")
-ex() %>% check_object("final_total") %>% check_equal()
+ex() %>% check_error(incorrect_msg="Did you replace the ... with valid code") %>% check_object("final_total") %>% check_equal()
 ```
 
 ---
